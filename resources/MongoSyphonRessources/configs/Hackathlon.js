@@ -18,7 +18,7 @@ start: {
     },
     target : {
       mode: "insert",
-      uri:"mongodb://admin-user:admin-pass@sandbox-shard-00-00.rtgvt.mongodb.net:27017,sandbox-shard-00-01.rtgvt.mongodb.net:27017,sandbox-shard-00-02.rtgvt.mongodb.net:27017/test?ssl=true&replicaSet=atlas-cv4zo0-shard-0&authSource=admin&retryWrites=true&w=majority",
+      uri:"mongodb://<user>:<pass>@sandbox-shard-00-00.rtgvt.mongodb.net:27017,sandbox-shard-00-01.rtgvt.mongodb.net:27017,sandbox-shard-00-02.rtgvt.mongodb.net:27017/test?ssl=true&replicaSet=atlas-cv4zo0-shard-0&authSource=admin&retryWrites=true&w=majority",
       namespace: "hackathlon.test"
     },
   query: {
