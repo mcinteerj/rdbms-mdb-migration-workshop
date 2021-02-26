@@ -1,5 +1,5 @@
 # RDBMS to MongoDB Migration
-**Time to Complete:** XXX
+**Time to Complete:** 2.5 Hours
 
 This is a workshop in which you will learn key aspects of re-modelling relational data for optimal performance in MongoDB. We will use the example of a Telco organisation migrating customer billing system from their legacy MySQL Database to MongoDB Atlas. The MySQL Database is all set up for you and connection parameters will be provided. You should already have your own MongoDB Atlas cluster ready and available to migrate to. 
 
