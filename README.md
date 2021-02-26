@@ -46,8 +46,8 @@ You are in charge of:
 We have set this workshop up to cater for a range of skill and experience levels with MongoDB. Specifically we have three guides available for you to choose from:
 
 1. [Easy Guide](guides/easy) - Allows for those who are new to MongoDB by providing step-by-step instructions of what to do for each stage
-2. [Medium](guides/medium) - Allows for those who have limited MongoDB experience, providing some hints/guidance but leaving it up to the student to solve each problem
-3. [Hard](guides/hard) - Sets out only the higher level problem statement for each exercise and leaves it up to the student to work out exactly how to solve the problem
+2. [Medium Guide](guides/medium) - Allows for those who have limited MongoDB experience, providing some hints/guidance but leaving it up to the student to solve each problem
+3. [Hard Guide](guides/hard) - Sets out only the higher level problem statement for each exercise and leaves it up to the student to work out exactly how to solve the problem
 
 # Resources
 The following links are to external pages which contain further reading and resources for some of the key topics covered in this lab:
