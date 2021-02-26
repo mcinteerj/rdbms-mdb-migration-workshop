@@ -1,0 +1,12 @@
+2021-02-16 08:39:59.358 [main] INFO  c.johnlpage.mongosyphon.MongoSyphon:25 - MongoSyphon Version 0.1.1
+2021-02-16 08:39:59.360 [main] INFO  c.j.mongosyphon.CommandLineOptions:23 - Parsing Command Line
+2021-02-16 08:39:59.363 [main] ERROR c.johnlpage.mongosyphon.MongoSyphon:40 - No config file supplied
+2021-02-16 08:40:03.072 [main] INFO  c.johnlpage.mongosyphon.MongoSyphon:25 - MongoSyphon Version 0.1.1
+2021-02-16 08:40:03.074 [main] INFO  c.j.mongosyphon.CommandLineOptions:23 - Parsing Command Line
+2021-02-16 08:40:14.252 [main] INFO  c.johnlpage.mongosyphon.MongoSyphon:25 - MongoSyphon Version 0.1.1
+2021-02-16 08:40:14.254 [main] INFO  c.j.mongosyphon.CommandLineOptions:23 - Parsing Command Line
+2021-02-16 08:40:14.257 [main] ERROR c.johnlpage.mongosyphon.MongoSyphon:30 - Failed to parse command line options
+2021-02-16 08:40:14.257 [main] ERROR c.johnlpage.mongosyphon.MongoSyphon:31 - Missing argument for option: n
+2021-02-16 08:42:33.390 [main] INFO  c.johnlpage.mongosyphon.MongoSyphon:25 - MongoSyphon Version 0.1.1
+2021-02-16 08:42:33.392 [main] INFO  c.j.mongosyphon.CommandLineOptions:23 - Parsing Command Line
+2021-02-16 08:42:33.420 [main] ERROR c.j.mongosyphon.DocumentGenerator:41 - Cannot find section named 'null' in config - aborting
