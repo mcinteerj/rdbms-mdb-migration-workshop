@@ -1,9 +1,0 @@
-/Users/charles.vp/Documents/GitHub/MongoSyphon/src/main/java/com/johnlpage/mongosyphon/MongoSyphon.java
-/Users/charles.vp/Documents/GitHub/MongoSyphon/src/main/java/com/johnlpage/mongosyphon/MongoConnection.java
-/Users/charles.vp/Documents/GitHub/MongoSyphon/src/main/java/com/johnlpage/mongosyphon/IDocumentTransformer.java
-/Users/charles.vp/Documents/GitHub/MongoSyphon/src/main/java/com/johnlpage/mongosyphon/CommandLineOptions.java
-/Users/charles.vp/Documents/GitHub/MongoSyphon/src/main/java/com/johnlpage/mongosyphon/MongoBulkWriter.java
-/Users/charles.vp/Documents/GitHub/MongoSyphon/src/main/java/com/johnlpage/mongosyphon/JobDescription.java
-/Users/charles.vp/Documents/GitHub/MongoSyphon/src/main/java/com/johnlpage/mongosyphon/RDBMSConnection.java
-/Users/charles.vp/Documents/GitHub/MongoSyphon/src/main/java/com/johnlpage/mongosyphon/DocumentGenerator.java
-/Users/charles.vp/Documents/GitHub/MongoSyphon/src/main/java/com/johnlpage/mongosyphon/IDataSource.java

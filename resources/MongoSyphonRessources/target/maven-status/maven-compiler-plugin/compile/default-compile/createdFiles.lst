@@ -1,9 +1,0 @@
-com/johnlpage/mongosyphon/IDocumentTransformer.class
-com/johnlpage/mongosyphon/IDataSource.class
-com/johnlpage/mongosyphon/CommandLineOptions.class
-com/johnlpage/mongosyphon/MongoBulkWriter.class
-com/johnlpage/mongosyphon/MongoSyphon.class
-com/johnlpage/mongosyphon/JobDescription.class
-com/johnlpage/mongosyphon/DocumentGenerator.class
-com/johnlpage/mongosyphon/MongoConnection.class
-com/johnlpage/mongosyphon/RDBMSConnection.class
