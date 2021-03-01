@@ -2,10 +2,11 @@
 
 In this section we will migrate your data from the Relationnal Database through MongoSyphon.
 The goal is to come up with your config.js file that applies your schema.
-Disclaimer: The following instructions are taken from the MongoSyphon GitHub and my own experience.
-Information contained in it may be inacurate or not reflect the full process behind the program.
+Disclaimer: The following instructions are taken from the MongoSyphon GitHub.
+MongoSyphon is an Open Source tool that is not supported (officially and otherwise) by MongoDB.
+Information contained in this readme may be inacurate or not reflect the full process behind the program.
 
-## Config.js template and how it works
+## [Config.js](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/resources/MongoSyphonRessources/configs/Hackathon.js) template and how it works
 
 The follwing example comes from the official MongoSyphon GitHub.
 
@@ -56,42 +57,6 @@ The follwing example comes from the official MongoSyphon GitHub.
 		params : [ "species" ]
 	}
 }
->java -jar ../bin/MongoSyphon.jar -c owners.js 
-2 records converted in 0 seconds at an average of 7 records/s
->mongo -uroot -ppassword
-> use sdemo
-switched to db sdemo
-> db.owners.find().pretty()
-{
-	"_id" : 1,
-	"name" : "John",
-	"address" : "22 Accacia Avenue",
-	"pets" : [
-		{
-			"petid" : 1,
-			"name" : "Brea",
-			"species" : "Dog"
-		},
-		{
-			"petid" : 2,
-			"name" : "Harvest",
-			"species" : "Dog"
-		}
-	]
-}
-{
-	"_id" : 2,
-	"name" : "Sarah",
-	"address" : "19 Main Street",
-	"pets" : [
-		{
-			"petid" : 3,
-			"name" : "Mittens",
-			"species" : "Cat"
-		}
-	]
-}
->exit
 ```
 
 As you can see the template is fairly intuitive.
@@ -102,14 +67,36 @@ In this exemple we can see the other 2 added sections are petsection and species
 
 The source is the connection string and values to your source Database. In our case it is a MySQL Database made for this event.
 
+```
+source: {
+        uri:  "jdbc:mysql://database",
+        user: "user",
+        password: "pass",
+    }
+```
+
 ## Target
 
 The target is the connection string and values to your MongoDB Database. You will have to put your connection string in the uri field.
 The namespace field correspond to the database.
 
+```
+    target : {
+      mode: "insert",
+      uri:"mongodb+srv://<user>:<pass>@yourURI?retryWrites=true&w=majority",
+      namespace: "hackathon.customers"
+    }
+```
+
 ## Query
 
 The query is the query made on the source Database. For our exercises they will be done in sql.
+
+```
+  query: {
+      sql:'SELECT * FROM customers'
+  }
+```
 
 ## Template
 
@@ -132,9 +119,10 @@ This is useful to follow your schema and for the one to many relations.
 Now that you have more informations about the config file, we will start making the one for our exemple.
 The first step is the connection.
 
-For this step, you will have to go to your cluster's page and click on the "Connect" button, "Connect your application" choose the Java driver for the 3.6 version. At this point, you can click on the copy button and put it in the uri field being careful to change the <user> and <password> value.
-    
-------screenshot------
+For this step, you will have to go to your cluster's page and click on the "Connect" button,
+<img src=2./images/connect.png" height="300>
+"Connect your application" choose the Java driver for the 3.6 version. At this point, you can click on the copy button and put it in the uri field being careful to change the <user> and <password> value.
+
 
 ## Query
 
@@ -276,38 +264,7 @@ Output:
         {"call_duration":"900",
         "date":"1930-02-22 02:26:34",
         "connected_party_num":"0303 864 8723"},
-        
-        {"call_duration":"585",
-        "date":"1950-04-28 19:39:24",
-        "connected_party_num":"01874 89078"},
-        
-        {"call_duration":1038",
-        "date":"1966-06-08 23:25:28",
-        "connected_party_num":"0500 079073"},
-        
-        {"call_duration":"1024",
-        "date":"1972-11-16 03:27:01",
-        "connected_party_num":"0927 656 2289"},
-        
-        {"call_duration":977",
-        "date":"1973-02-13 20:29:39",
-        "connected_party_num":"0171 087 3870"},
-        
-        {"call_duration":473",
-        "date":"1984-06-06 20:51:11",
-        "connected_party_num":"021 8030 3632"},
-        
-        {"call_duration":728",
-        "date":"1985-10-10 02:10:58",
-        "connected_party_num":"016977 6461"},
-        
-        {"call_duration":943",
-        "date":"1992-04-17 19:14:40",
-        "connected_party_num":"+44 65 2913 3545"},
-        
-        {"call_duration":1083",
-        "date":"1994-04-23 12:24:22",
-        "connected_party_num":"0995 251 4908"}]
+   ...
 }
 ```
 
@@ -348,7 +305,7 @@ You are now all set to make the migration.
 you can head to your shell in the MongoSyphon's directory and make the following command:
 
 ```
-%java -jar ./bin/MongoSyphon.jar -c ./configs/Hackathlon.js
+java -jar ./bin/MongoSyphon.jar -c ./configs/Hackathlon.js
 ```
 
 You should see after a little less than a minute the following message:
