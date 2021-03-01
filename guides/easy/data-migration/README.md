@@ -121,7 +121,7 @@ The first step is the connection.
 
 For this step, you will have to go to your cluster's page and click on the "Connect" button,
 
-> <img src="./images/connect.png"height="300>
+> <img src="./images/connect.png">
                                                                                                                                     
 "Connect your application" choose the Java driver for the 3.6 version. At this point, you can click on the copy button and put it in the uri field being careful to change the <user> and <password> value.
 
