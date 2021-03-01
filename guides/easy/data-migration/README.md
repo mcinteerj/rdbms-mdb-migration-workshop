@@ -117,7 +117,7 @@ Each section has a template which is written following this syntax:
 
 ```
 template:{
- "one-filed":"$value"
+ "one-field":"$value"
 }
 ```
 
@@ -138,7 +138,7 @@ For this step, you will have to go to your cluster's page and click on the "Conn
 
 ## Query
 
-For our exemple in the start section the query will be 'SELECT * FROM customers' because we want to build our MongoDB Database with one document per Customer.
+For our exemple in the start section the query will be **'SELECT * FROM customers'** because we want to build our MongoDB Database with one document per Customer.
 This query will return all of the values countained in the customers table.
 You can try the query on your MySQL shell to see what the data looks like.
 ------mysqlShell--------
@@ -351,8 +351,9 @@ you can head to your shell in the MongoSyphon's directory and make the following
 %java -jar ./bin/MongoSyphon.jar -c ./configs/Hackathlon.js
 ```
 
-You should see after around a minute the following message:
+You should see after a little less than a minute the following message:
 
 ```
 100 records converted in 29 seconds at an average of 3 records/s
 ```
+
