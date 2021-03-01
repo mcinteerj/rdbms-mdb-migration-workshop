@@ -126,8 +126,8 @@ For the values, you have two possibilities: either the $ sign to get the value o
 The type of the value will depend on the data source but you are able to force a field to be either an [array,] or an {object:object,}.
 This is useful to follow your schema and for the one to many relations.
 
-## Our schema
-### Connection
+# Our schema
+## Connection
 
 Now that you have more informations about the config file, we will start making the one for our exemple.
 The first step is the connection.
@@ -136,14 +136,14 @@ For this step, you will have to go to your cluster's page and click on the "Conn
     
 ------screenshot------
 
-### Query
+## Query
 
 For our exemple in the start section the query will be 'SELECT * FROM customers' because we want to build our MongoDB Database with one document per Customer.
 This query will return all of the values countained in the customers table.
 You can try the query on your MySQL shell to see what the data looks like.
 ------mysqlShell--------
 
-### Template
+## Template
 
 From our schema we can see that the Customer table has 10 Columns:
 
