@@ -121,7 +121,7 @@ The first step is the connection.
 
 For this step, you will have to go to your cluster's page and click on the "Connect" button,
 
-> <img src="./images/connect.png" height="500">
+> <img src="./images/connect.png" height="300">
                                                                                                                                     
 "Connect your application" choose the Java driver for the 3.6 version. 
 
