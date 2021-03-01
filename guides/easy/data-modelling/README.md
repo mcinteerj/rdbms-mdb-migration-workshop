@@ -44,29 +44,30 @@ The output of this exercise should be a JSON sample document that is an example 
 ```
 
 Use your favourite text editor to create a sample JSON document for the following data:
+```
 
 Customers Table
 mysql> select * from customers limit 1;
-```
+
 +---------------+--------+---------------+------------------------+--------------+---------------+-------------------+----------+------+--------------+
 | subscriber_id | gender | name          | email                  | phone_number | date_of_birth | street            | zip      | city | country_code |
 +---------------+--------+---------------+------------------------+--------------+---------------+-------------------+----------+------+--------------+
 | S000000999    | F      | Jane Doe      | jane123@gmail.com      | 019557 58345 | 1921-03-29    | 570 Earhart Trail | VL7M 7ZG | Bury | UK           |
 +---------------+--------+---------------+------------------------+--------------+---------------+-------------------+----------+------+--------------+
-```
+
 Calls Table
 mysql> select * from calls limit 1;
-```
+
 +---------------+--------------+---------------------+---------------+---------------------+
 | subscriber_id | rate_plan_id | connected_party_num | call_duration | date_time_stamp     |
 +---------------+--------------+---------------------+---------------+---------------------+
 | S000000999    | RP00000001   | 0534 052 0241       |           790 | 2020-03-29 20:40:16 |
 | S000000999    | RP00000001   | 0220 381 9343       |          1061 | 2020-04-13 18:32:24 |
 +---------------+--------------+---------------------+---------------+---------------------+
-```
+
 Rate Plans Table
 mysql> select * from rate_plan limit 1;
-```
+
 +--------------+------------------+------+
 | rate_plan_id | description      | type |
 +--------------+------------------+------+
