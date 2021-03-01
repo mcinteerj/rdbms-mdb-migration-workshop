@@ -1,7 +1,8 @@
 # Overview
 
-In this section we will migrate your data from the Relationnal Database through MongoSyphon.
-The goal is to come up with your config.js file that applies your schema.
+In this section we will migrate the data from the Relationnal Database through MongoSyphon.
+The goal is to come up with the config.js file that applies the schema.
+
 Disclaimer: The following instructions are taken from the MongoSyphon GitHub.
 MongoSyphon is an Open Source tool that is not supported (officially and otherwise) by MongoDB.
 Information contained in this readme may be inacurate or not reflect the full process behind the program.
@@ -59,13 +60,13 @@ The follwing example comes from the official MongoSyphon GitHub.
 }
 ```
 
-As you can see the template is fairly intuitive.
-You have your section which is "start" for the first one and then whichever you choose.
+As we can see the template is fairly intuitive.
+There is the first section which is "start" and then whichever you need.
 In this exemple we can see the other 2 added sections are petsection and speciessection.
 
 ## Source 
 
-The source is the connection string and values to your source Database. In our case it is a MySQL Database made for this event.
+The source is the connection string and values to your source Database. In this case it is a MySQL Database made for this exercise.
 
 ```
 source: {
@@ -77,7 +78,7 @@ source: {
 
 ## Target
 
-The target is the connection string and values to your MongoDB Database. You will have to put your connection string in the uri field.
+The target is the connection string and values to your MongoDB Database. You will have to replace the value with your connection string in the uri field.
 The namespace field correspond to the database.
 
 ```
@@ -90,7 +91,7 @@ The namespace field correspond to the database.
 
 ## Query
 
-The query is the query made on the source Database. For our exercises they will be done in sql.
+The query is the query made on the source Database. For this exercises they will be done in sql.
 
 ```
   query: {
@@ -108,10 +109,10 @@ template:{
 }
 ```
 
-As you can see each field has a name and his value. Both of which have to be in between "".
-For the values, you have two possibilities: either the $ sign to get the value of the field named or the @ sign that gets the value from the section called.
+As we can see each field has a name and his value. Both of which have to be in between "".
+For the values, there are two possibilities: either the $ sign to get the value of the field named or the @ sign that gets the value from the section called.
 The type of the value will depend on the data source but you are able to force a field to be either an [array,] or an {object:object,}.
-This is useful to follow your schema and for the one to many relations.
+This is useful to follow the wanted schema and for the one to many relations.
 
 # Our schema
 ## Connection
@@ -133,10 +134,9 @@ At this point, you can click on the copy button and put it in the uri field bein
 
 ## Query
 
-For our exemple in the start section the query will be **'SELECT * FROM customers'** because we want to build our MongoDB Database with one document per Customer.
+For this exercise in the start section the query will be **'SELECT * FROM customers'** because we want to build our MongoDB Database with one document per Customer.
 This query will return all of the values countained in the customers table.
 You can try the query on your MySQL shell to see what the data looks like.
-------mysqlShell--------
 
 ## Template
 
@@ -191,11 +191,11 @@ Output:
 ```
 
 Now that leaves us with the following problem:
-How can I get values from the other tables?
-To realize our schema we want to get the calls and embed them to the right suscriber's document.
-That's where the sections comes in.
+How can we get values from the other tables?
+To realize the schema we want to get the calls and embed them to the right suscriber's document.
+That's where the sections come in.
 MongoSyphon enables you to get a field's value from a section where you can give another template and another query.
-To this end we are making the "@callssection" where we will query the calls and put them into the right document.
+To this end, we are making the "@callssection" where we will query the calls and put them into the right document.
 You can query the calls table in your MySQL shell if you want to see what the data look like.
 
 ```
@@ -220,10 +220,10 @@ callssection:{
 }
 ```
 
-For the keen eye, you will observe that we used a parameter. That is because we want to make the link between the customer and the calls.
+For the keen eye, you will observe that we used a **parameter**. That is because we want to make the link between the customer and the calls.
 With that query MongoSyphon will use the parameter for each subscriber_id will give us all their calls.
 
-To call that section, you simple put another field in your start section's template as following:
+To call that section, you simply put another field in your start section's template as following:
 
 ```
 template: {
@@ -294,7 +294,7 @@ callssection:{
 }
 ```
 
-Now that you are used to all of the main elements I will just give you the rateplansection, as previously you can query the rate_plan table from your MySQL shell to see what the data looks like:
+Now that you are used to all of the main elements here is the rateplansection, as previously, you can query the rate_plan table from your MySQL shell to see what the data looks like:
 
 ```
 rateplansection:{
@@ -309,7 +309,7 @@ rateplansection:{
 ```
 
 You are now all set to make the migration.
-you can head to your shell in the MongoSyphon's directory and make the following command:
+You can head to your shell in the MongoSyphon's directory and make the following command:
 
 ```
 java -jar ./bin/MongoSyphon.jar -c ./configs/Hackathlon.js
