@@ -120,7 +120,7 @@ Now that you have more informations about the config file, we will start making 
 The first step is the connection.
 
 For this step, you will have to go to your cluster's page and click on the "Connect" button,
-<img src="https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/easy/data-migration/images/connect.png" height="300>
+> <img src="https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/easy/data-migration/images/connect.png" height="300>
 "Connect your application" choose the Java driver for the 3.6 version. At this point, you can click on the copy button and put it in the uri field being careful to change the <user> and <password> value.
 
 
