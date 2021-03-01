@@ -171,24 +171,20 @@ This gives you the following template:
 
 Output:
 
+,
 
 {
     "_id":"S000000100",
-
     "address":{
         "street":"426 Estate Walk"
         "zip":"DL8Z 0ST"
         "city":"Monmouth"
         "country_code":"UK"
-        },
-        
+        },   
     "date_of_birth":"1929-09-12",
-
     "email": "deermeat1961@protonmail.com",
-
     "gender": "M",
-
     "name": "Alexander Hodges",
-
     "phone_number": 056 2126 1927,
+    
 }
