@@ -129,6 +129,7 @@ For this step, you will have to go to your cluster's page and click on the "Conn
 
 At this point, you can click on the copy button and put it in the uri field being careful to change the <user> and <password> value.
 
+> <img src="./images/connectapp.png" height="500">
 
 ## Query
 
