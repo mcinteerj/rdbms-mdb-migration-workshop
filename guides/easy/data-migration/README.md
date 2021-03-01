@@ -312,7 +312,7 @@ Output:
 ```
 
 Now there is only the rate_plan left. Our Relational Database has another table which is linked to the calls' one.
-For that we can use the previously learned section ability **nested** in the callssection.
+For that we can use the previously learned function **nested** in the callssection.
 
 Here is now our callssection:
 
