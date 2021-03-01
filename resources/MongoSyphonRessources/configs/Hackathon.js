@@ -14,12 +14,12 @@ start: {
     source: {
         uri:  "jdbc:mysql://database-1.cb7xvxwyioz4.eu-west-3.rds.amazonaws.com:3306/telecom?useUnicode=true&useServerPrepStmts=true&useSSL=false",
         user: "bt-hack",
-        password: "H@ckathlon1",
+        password: "H@ckathon1",
     },
     target : {
       mode: "insert",
       uri:"mongodb://<user>:<pass>@sandbox-shard-00-00.rtgvt.mongodb.net:27017,sandbox-shard-00-01.rtgvt.mongodb.net:27017,sandbox-shard-00-02.rtgvt.mongodb.net:27017/test?ssl=true&replicaSet=atlas-cv4zo0-shard-0&authSource=admin&retryWrites=true&w=majority",
-      namespace: "hackathlon.test"
+      namespace: "hackathon.test"
     },
   query: {
       sql:'SELECT * FROM customers order by subscriber_id DESC'
