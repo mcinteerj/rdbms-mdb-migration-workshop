@@ -115,11 +115,11 @@ The query is the query made on the source Database. For our exercises they will 
 
 Each section has a template which is written following this syntax:
 
-'''
+
 template:{
  "one-filed":"$value"
 }
-'''
+
 
 As you can see each field has a name and his value. Both of which have to be in between "".
 For the values, you have two possibilities: either the $ sign to get the value of the field named or the @ sign that gets the value from the section called.
@@ -147,17 +147,17 @@ You can try the query on your MySQL shell to see what the data looks like.
 
 From our schema we can see that the Customer table has 10 Columns:
 
-'''
+
 Customers
 
 subscriber_id | gender | name | email | phone_number | date_of_birth | street | zip | city | country_code
 ---------------------------------------------------------------------------------------------------------
 
-'''
+
 
 This gives you the following template:
 
-'''
+
   template: {
       "_id": "$subscriber_id",
       "gender": "$gender",
@@ -167,11 +167,11 @@ This gives you the following template:
       "date_of_birth": "$date_of_birth",
       "address":{"street": "$street", "zip":"$zip", "city":"$city", "country_code":"$country_code"},
     }
-'''
+
 
 Output:
 
-'''
+
 {
     "_id":"S000000100",
 
@@ -192,4 +192,3 @@ Output:
 
     "phone_number": 056 2126 1927,
 }
-'''
