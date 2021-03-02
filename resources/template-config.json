@@ -1,0 +1,32 @@
+{
+    "start": {
+        "source": {
+            "uri": "jdbc:mysql://database-1.cb7xvxwyioz4.eu-west-3.rds.amazonaws.com:3306/telecom?useUnicode=true&useServerPrepStmts=true&useSSL=false",
+            "user": "bt-hack",
+            "password": "H@ckathon1"
+        },
+        "target": {
+            "mode": "insert",
+            "uri": "<Atlas Connection String>",
+            "namespace": "<db_name>.<coll_name>"
+        },
+        "template": {
+            // Target Document Structure
+            "other_section": "$other_section"
+        },
+        "query": {
+            "sql": "SELECT * FROM XXX"
+        }
+    },
+    "other_section": {
+        "template": {
+            // Target Document Structure
+        },
+        "query": {
+            "sql": "SELECT * FROM XXX WHERE COLUMN_X = ?"
+        }, 
+        "params": [
+            "VALUE_X"
+        ]
+    }
+}

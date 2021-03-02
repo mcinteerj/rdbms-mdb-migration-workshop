@@ -49,6 +49,33 @@ The output of this exercise should be a JSON sample document that is an example 
 
 > <img src="./images/data-modelling-1.png" height="300">
 
+If you are familiar with SQL and want to look directly at the data in the MySQL database, you can connect using the following parameters:
+```
+{
+    "uri": "jdbc:mysql://database-1.cb7xvxwyioz4.eu-west-3.rds.amazonaws.com:3306/telecom?useUnicode=true&useServerPrepStmts=true&useSSL=false",
+    "user": "bt-hack",
+    "password": "H@ckathon1"
+}
+```
+
+For example, **if** connecting with the [MySQL Shell](https://dev.mysql.com/doc/mysql-shell/8.0/en/), you could use the following command (note: this is optional for those who want to connect directly to the source DB):
+```
+mysql -h database-1.cb7xvxwyioz4.eu-west-3.rds.amazonaws.com -P 3306 -u bt-hack --password="H@ckathon1"
+```
+
+You could then run commands such as:
+```
+SHOW DATABASES;
+
+USE telecom;
+
+SHOW TABLES;
+
+SELECT * FROM customers LIMIT 5;
+```
+
+You could also use GUI based products like [MySQL Workbench](https://dev.mysql.com/doc/workbench/en/) if that was preferable. However this is not required as we have documented the key information about the telecom database in below:
+
 ### Customers Table
 
 ```
