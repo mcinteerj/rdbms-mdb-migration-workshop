@@ -92,4 +92,4 @@ Hints:
 Data from all three tables should be **denormalized** into a single document
 This blog is a good example of how it should look (pay particular attention to embedding!)
 
-Once you’ve created your sample, see here to compare it to our [solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/README.md). 
+Once you’ve created your sample, see here to compare it to our [solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/DataModellingSolution.md). 
