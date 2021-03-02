@@ -312,7 +312,7 @@ You are now all set to make the migration.
 You can head to your shell in the MongoSyphon's directory and make the following command:
 
 ```
-java -jar ./bin/MongoSyphon.jar -c ./configs/Hackathlon.js
+java -jar MongoSyphon.jar -c Hackathon.js
 ```
 
 You should see after a little less than a minute the following message:
