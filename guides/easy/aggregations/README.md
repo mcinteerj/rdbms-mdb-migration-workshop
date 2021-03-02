@@ -34,9 +34,12 @@ $sum
 In order to build out your aggregation pipeline, you can use the following ways:
 1. Navigate to the ‘Aggregation’ tab under ‘Collections’ in your cluster 
 
+> <img src="./images/Aggregation.png" height="500">
 
    -a Click on the ‘Add Stage’ button and start building out your aggregation pipeline stage-by-stage. You can also preview a sample of the aggregated results on the side. You can continue to add more stages by using the ‘Add Stage’ button.
 
 2. Alternatively, you can utilise MongoDB Compass for the same. Navigate to the ‘Aggregations’ tab once you’re inside your collection
+
+> <img src="./images/Aggregation2.png" height="500">
 
    -a Click on the ‘Add Stage’ button and start building out your aggregation pipeline stage-by-stage. You can also preview a sample of the aggregated results on the side. You can continue to add more stages by using the ‘Add Stage’ button.
