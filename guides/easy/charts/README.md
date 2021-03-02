@@ -31,7 +31,7 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 
 
 * You can put in your aggregation query into the ‘Query’ bar to generate results 
-> <img src="./images/charts-8.png" height="200">
+> <img src="./images/charts-8.png" height="300">
 
 * You can also drag and drop fields into the encoding panel and select the relevant details based on your Chart type
-> <img src="./images/charts-9.png" height="300">
+> <img src="./images/charts-9.png" height="200">
