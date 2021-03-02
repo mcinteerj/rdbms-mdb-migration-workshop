@@ -9,7 +9,7 @@ There are many commercial ETL tools provided by third parties which can be used 
 # MongoSyphon
 In this section we will migrate the data from the Relational Database through MongoSyphon to MongoDB Atlas.
 
-You can find the MongoSyphon.jar file and Config.js template in the [Resources Folder](../../resources/). The detail below explains how to configure and run MongoSyphon in order to migrate your data. 
+You can find the MongoSyphon.jar file and Config.js template in the [Resources Folder](../../../resources/). The detail below explains how to configure and run MongoSyphon in order to migrate your data. 
 
 Your goal is to create a config.js file which MongoSyphon can use to extract data from  MySQL and transforms it inflight in order to load the data into MongoDB in the data model you created in the [Data Modelling Exercise](../data-modelling/). 
 
@@ -360,7 +360,7 @@ rateplansection:{
 You are now all set to do the migration.
 
 ## Executing the Migration
-Download the MongoSyphon.jar file from [here](../../resources/MongoSyphon.jar).
+Download the MongoSyphon.jar file from [here](../../../resources/MongoSyphon.jar).
 
 To run MongoSyphon, you simply call it with the java command. For example, in order to print the 'help' information for MongoSyphon, you could run:
 ```
