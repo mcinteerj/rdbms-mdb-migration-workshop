@@ -58,7 +58,7 @@ If you are familiar with SQL and want to look directly at the data in the MySQL 
 }
 ```
 
-For example, **if** connecting with the [MySQL Shell](https://dev.mysql.com/doc/mysql-shell/8.0/en/), you could use the following command (note: this is optional for those who want to connect directly to the source DB):
+For example, **if** connecting you have the MySQL command line client installed, you could use the following command (note: this is optional for those who want to connect directly to the source DB and already have a client installed):
 ```
 mysql -h database-1.cb7xvxwyioz4.eu-west-3.rds.amazonaws.com -P 3306 -u bt-hack --password="H@ckathon1"
 ```
