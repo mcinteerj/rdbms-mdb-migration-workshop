@@ -31,3 +31,9 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 
 * You can also drag and drop fields into the encoding panel and select the relevant details based on your Chart type
 > <img src="./images/charts-9.png" height="100">
+
+## First aggregation visualization
+
+Now that you are setup with Charts, you can select the ```Hackathon.customers``` collection as you data and put the ```call_duration``` in the x and ```gender``` in the y.
+As in the aggregation pipeline, you want to ```unwind``` the ```call_duration``` to have one document per calls and then the average ```mean```.
+For the ```gender``` you want it as ```Value```.
