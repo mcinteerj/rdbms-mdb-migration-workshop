@@ -46,4 +46,4 @@ For the second aggregation we will filter the data beforehand using the ```Query
 Once you have put the aggregation pipeline in the ```Query``` field, you will see only the ```_id``` and ```count``` as ```Fields``` on the left.
 You can drag each one in the ```x``` field and ```y``` field to get the visualization.
 Charts will automatically check the ```Binning``` option but we want to see the ```count``` for each hour so we will uncheck this option and select ```Sum``` for the ```count``` field.
-The result should look like this [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation2Charts.png)
+The result should look like this [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation2Chart.png)
