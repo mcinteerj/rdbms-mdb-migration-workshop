@@ -39,6 +39,7 @@ As in the aggregation pipeline, you want to ```unwind``` the ```call_duration```
 For the ```gender``` you want it as ```Value```.
 Then you can go into ```Customize``` to enable the ```Data Value Label```.
 You can see the result in the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation1Charts.png)
+Values may vary depending on the session.
 
 ## Second aggregation visualization
 
@@ -47,3 +48,4 @@ Once you have put the aggregation pipeline in the ```Query``` field, you will se
 You can drag each one in the ```x``` field and ```y``` field to get the visualization.
 Charts will automatically check the ```Binning``` option but we want to see the ```count``` for each hour so we will uncheck this option and select ```Sum``` for the ```count``` field.
 The result should look like this [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation2Chart.png)
+Values may vary depending on the session.
