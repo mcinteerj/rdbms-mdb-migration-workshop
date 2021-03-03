@@ -37,3 +37,13 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 Now that you are setup with Charts, you can select the ```Hackathon.customers``` collection as you data and put the ```call_duration``` in the x and ```gender``` in the y.
 As in the aggregation pipeline, you want to ```unwind``` the ```call_duration``` to have one document per calls and then the average ```mean```.
 For the ```gender``` you want it as ```Value```.
+Then you can go into ```Customize``` to enable the ```Data Value Label```.
+You can see the result in the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation1Charts.png)
+
+## Second aggregation visualization
+
+For the second aggregation we will filter the data beforehand using the ```Query``` function.
+Once you have put the aggregation pipeline in the ```Query``` field, you will see only the ```_id``` and ```count``` as ```Fields``` on the left.
+You can drag each one in the ```x``` field and ```y``` field to get the visualization.
+Charts will automatically check the ```Binning``` option but we want to see the ```count``` for each hour so we will uncheck this option and select ```Sum``` for the ```count``` field.
+The result should look like this [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation2Charts.png)
