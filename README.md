@@ -25,15 +25,18 @@ This tutorial is set out in a way that most people with a hands-on technical bac
 ## Software Requirements
 1. A modern web browser such as [Google Chrome](https://chrome.google.com) or [Mozilla Firefox](https://www.mozilla.org/en-GB/firefox/)
 2. A text or code editor to alter a javascript application (Notepad (Windows) or TextEdit (OS X) will work fine, although we use [Visual Studio Code](https://code.visualstudio.com/download))
-3. Install [MongoDB Compass](https://www.mongodb.com/products/compass) - the GUI for MongoDB
-4. A shell (i.e. terminal on Mac or Powershell on Windows)
-5. Java (Version XXX)
+3. [MongoDB Compass](https://www.mongodb.com/products/compass) - the GUI for MongoDB
+4. A shell (e.g. terminal on Mac or Powershell on Windows)
+5. Java
+
+### Optional Software Tools
+1. A MySQL client (either Command Line or Workbench/GUI)
 
 ## Pre-Requisites
 * Have a MongoDB Atlas cluster available to migrate to (head to https://cloud.mongodb.com/ to spin up your own free tier cluster if you don't already have one)
 
 # Overview
-‘National Telecom’ is a leading telecom provider in the UK. They have decided to revamp their Customer Billing System as the current system is unable to perform well with the increasing amount of data related to customer calls. In addition, the company is currently unable to send targeted information about rate plans and services to customers based on their usage, due to which it is losing market share to competitors.  
+*National Telecom* is a leading telecom provider in the United Kingdom. They have decided to revamp their Customer Billing System as the current system is unable to perform well with the increasing amount of data related to customer calls. In addition, the company is currently unable to send targeted information about rate plans and services to customers based on their usage, due to which it is losing market share to competitors.  
 
 You are in charge of: 
 * Designing a document data model based on the existing relational schema
