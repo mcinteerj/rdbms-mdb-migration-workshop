@@ -43,3 +43,5 @@ In order to build out your aggregation pipeline, you can use the following ways:
 > <img src="./images/Aggregation2.png" height="500">
 
    - Click on the ‘Add Stage’ button and start building out your aggregation pipeline stage-by-stage. You can also preview a sample of the aggregated results on the side. You can continue to add more stages by using the ‘Add Stage’ button.
+
+### Once finished you can compare your result with the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation1.md) for the aggregation A and the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation2.md) for the aggregation B
