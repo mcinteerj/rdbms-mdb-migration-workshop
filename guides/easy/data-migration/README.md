@@ -360,7 +360,7 @@ rateplansection:{
 You are now all set to do the migration.
 
 ## Executing the Migration
-Download the MongoSyphon.jar file from [here](../../../resources/MongoSyphon.jar).
+Download the MongoSyphon.jar file from [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/raw/main/resources/MongoSyphon.jar).
 
 To run MongoSyphon, you simply call it with the java command. For example, in order to print the 'help' information for MongoSyphon, you could run:
 ```
