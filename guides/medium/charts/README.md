@@ -35,3 +35,5 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 You are now ready to make the vizualisation of your aggregations.
 
 **Hint: Charts can and is really close to the aggregation framework to produce the visualization.**
+
+Once you are done you can compare your solution to the [Solution A](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation1Charts.png) and [Solution B](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation2Chart.png)
