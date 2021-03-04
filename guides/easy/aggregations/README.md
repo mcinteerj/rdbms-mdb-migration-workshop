@@ -2,18 +2,10 @@
 
 In this exercise, you will use MongoDB’s powerful Aggregation Pipeline to run analytics queries on the collection(s) you created in the previous exercise. 
 
-<<<<<<< Updated upstream
-**You have received the following requests from your marketing team:**
-
-(a) Find out the average call duration by Gender across all subscribers (Assume that the data contains only two types of genders: ‘Male’ and ‘Female’).
-
-(b) Find out the ‘Peak Calling Time’ by analysing the total number of calls made per hour by all subscribers (Note: Group the data by hour, starting from 00 to 23
-=======
 ***You have received the following requests from your marketing team:***
 > 1. Find out the **average call duration by Gender** across all subscribers
 
 > 2. Find out the **Peak Calling Hour** by analysing the total number of calls made per hour by all subscribers (Note: Group the data by hour, starting from 00 to 23
->>>>>>> Stashed changes
 
 
 ## Useful Operators:
