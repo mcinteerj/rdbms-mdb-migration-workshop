@@ -33,4 +33,5 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 > <img src="./images/charts-9.png" height="300">
 > 
 You are now ready to make the vizualisation of your aggregations.
-**Hint: Charts can and is really close to the aggregation to produce the visualization.**
+
+**Hint: Charts can and is really close to the aggregation framework to produce the visualization.**
