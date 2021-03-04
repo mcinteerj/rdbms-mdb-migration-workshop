@@ -149,52 +149,13 @@ subscriber_id | gender | name | email | phone_number | date_of_birth | street | 
 ---------------------------------------------------------------------------------------------------------
 ```
 
-
-This gives you the following template:
-
-```
-  template: {
-      "_id": "$subscriber_id",
-      "gender": "$gender",
-      "name": "$name",
-      "email": "$email",
-      "phone_number":"$phone_number",
-      "date_of_birth": "$date_of_birth",
-      "address":{
-        "street": "$street", 
-        "zip":"$zip", 
-        "city":"$city", 
-        "country_code":"$country_code"
-        },
-    }
-```
-
-Output:
-
-```
-
-{
-    "_id":"S000000100",
-    "address":{
-        "street":"426 Estate Walk"
-        "zip":"DL8Z 0ST"
-        "city":"Monmouth"
-        "country_code":"UK"
-        },   
-    "date_of_birth":"1929-09-12",
-    "email": "deermeat1961@protonmail.com",
-    "gender": "M",
-    "name": "Alexander Hodges",
-    "phone_number": 056 2126 1927,
-    
-}
-```
+From the example above you can already see how you can make it work.
 
 Now that leaves us with the following problem:
 How can we get values from the other tables?
 To realize the schema we want to get the calls and embed them to the right suscriber's document.
 That's where the sections come in.
-MongoSyphon enables you to get a field's value from a section where you can give another template and another query.
+MongoSyphon enables you to get a field's value from a section where you can give another template and another query like the ``` petsection ```.
 To this end, we are making the "@callssection" where we will query the calls and put them into the right document.
 You can query the calls table in your MySQL shell if you want to see what the data look like.
 
@@ -205,108 +166,13 @@ subscriber_id | rate_plan_id | connected_party_num | call_duration | date_time_s
 ------------------------------------------------------------------------------------
 ```
 
-Our callssection following the table will be like this:
-
-```
-callssection:{
-    template:{
-        "call_duration":"$call_duration",
-        "date":"$date_time_stamp",
-        "connected_party_num":"$connected_party_num"
-    },
-    query: {
-        sql:'SELECT * FROM calls where subscriber_id=?'
-    },params:["subscriber_id"]
-}
-```
-
-For the keen eye, you will observe that we used a **parameter**. That is because we want to make the link between the customer and the calls.
-With that query MongoSyphon will use the parameter for each subscriber_id will give us all their calls.
-
-To call that section, you simply put another field in your start section's template as following:
-
-```
-template: {
-      "subscriber_id": "$subscriber_id",
-      "gender": "$gender",
-      "name": "$name",
-      "email": "$email",
-      "phone_number":"$phone_number",
-      "date_of_birth": "$date_of_birth",
-      "address":{
-          "street": "$street",
-          "zip":"$zip", 
-              "city":"$city", 
-                  "country_code":"$country_code"
-      },
-      "calls": ["@callssection"]
-    }
-```
-
-Output:
-
-```
-{
-    "_id":"S000000100",
-    "address":{
-        "street":"426 Estate Walk",
-        "zip":"DL8Z 0ST",
-        "city":"Monmouth",
-        "country_code":"UK"
-        },
-    "date_of_birth":"1929-09-12",
-    "email":"deermeat1961@protonmail.com",
-    "gender":"M",
-    "name":"Alexander Hodges",
-    "phone_number":"056 2126 1927",
-    "calls":[{
-        "call_duration":"3",
-        "date":"1926-10-01 04:12:20",
-        "connected_party_num":"01093 136241"},
-        
-        {"call_duration":"229",
-        "date":"1928-03-25 02:15:39",
-        "connected_party_num":"019337 08684"},
-        
-        {"call_duration":"900",
-        "date":"1930-02-22 02:26:34",
-        "connected_party_num":"0303 864 8723"},
-   ...
-}
-```
-
+Now, thinking about it you may ask yourself: What makes MongoSyphon put the right calls into the right document?
+That's where the parameter is useful as you can see in the ```speciessection```.
+With that fucntionality you can make MongoSyphon use the parameter for each ```subscriber_id``` to give us all their calls.
+To call that section, you simply put another field in your start section's template as seen in the example.
 Now there is only the rate_plan left. Our Relational Database has another table which is linked to the calls' one.
-For that we can use the previously learned function **nested** in the callssection.
+For that, we can use the previously learned function **nested** in the callssection.
 
-Here is now our callssection:
-
-```
-callssection:{
-    template:{
-        "call_duration":"$call_duration",
-        "date":"$date_time_stamp",
-        "rate_plan_id":"@rateplansection",
-        "connected_party_num":"$connected_party_num"
-    },
-    query: {
-        sql:'SELECT * FROM calls where subscriber_id=?'
-    },params:["subscriber_id"]
-}
-```
-
-Now that you are used to all of the main elements here is the rateplansection, as previously, you can query the rate_plan table from your MySQL shell to see what the data looks like:
-
-```
-rateplansection:{
-    template:{
-        "description":"$description",
-        "type":"$type"
-    },
-    query:{
-        sql:'SELECT * FROM rate_plan where rate_plan_id=?'
-    },params:["rate_plan_id"]
-}
-```
 
 You are now all set to make the migration.
 You can head to your shell in the MongoSyphon's directory and make the following command:
