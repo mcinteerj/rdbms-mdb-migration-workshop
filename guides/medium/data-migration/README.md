@@ -181,7 +181,7 @@ rate_plan_id | description | type |
 ```
 
 You are now all set to make the migration.
-If you are unsure about your file, you can get the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/DataMigrationSolution.json)
+If you are unsure about your file, you can get the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/DataMigration/DataMigrationSolution.json)
 You can head to your shell in the MongoSyphon's directory and make the following command:
 
 ```
