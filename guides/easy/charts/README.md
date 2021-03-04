@@ -34,20 +34,20 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 
 ## Visualising the first Aggregation Exercise: Average Call Duration by Gender
 
-* Select the '''Hackathon.customers''’ collection as your data source
+* Select the ```Hackathon.customers``` collection as your data source
 * We suggest using the ‘Bar Chart’ graph for this exercise (but feel free to experiment with other visualisations if you prefer!)
-* The relevant fields for this chart are ''‘call_duration’'' and ''‘gender''’  
-* As you did in your aggregation pipeline query, you would need to use the ''''$unwind''' and '''$mean''' operators 
+* The relevant fields for this chart are ```call_duration``` and ```gender```  
+* As you did in your aggregation pipeline query, you would need to use the ```$unwind``` and ```$mean``` operators 
 * Remember to edit the ‘Data Value Label’ to customize! 
 * Once you're done, you can see a [Sample Result](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation1Charts.png) here. However, please note that there are many possible solutions to this exercise. 
 
 ## Visualising the second Aggregation Exercise: Peak Calling Time
 
-* Select the '''Hackathon.customers''' collection as your data source
+* Select the ```Hackathon.customers``` collection as your data source
 * We suggest using the ‘Bar Chart’ graph for this exercise (but feel free to experiment with other visualisations if you prefer!)
 * As this is a more complex aggregation, it would be a good idea to filter your data before you dive into creating your charts. To do this, enter your aggregation query from Exercise 3 (b) and enter it into the query field as shown in Step 6 of the Instructions above
-* You will see that Charts has filtered out the fields available as well. For this exercise, '''id''' and '''count''' are the relevant fields
-* A useful operator to use would be '''$sum'''
+* You will see that Charts has filtered out the fields available as well. For this exercise, ```id``` and ```count``` are the relevant fields
+* A useful operator to use would be ```$sum```
 * Remember to edit the ‘Data Value Label’ to customize! 
 * Once you are done, you can see a [Sample Result](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation2Chart.png) here.
 However, please note that there are many possible solutions to this exercise.
