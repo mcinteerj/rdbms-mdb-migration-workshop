@@ -1,4 +1,4 @@
-# Overview
+# Data Migration hard path
 
 In this section the goal is to migrate the data from the Relationnal Database to MongoDB.
 On this workshop we will be using MongoSyphon available in the Resources folder.
