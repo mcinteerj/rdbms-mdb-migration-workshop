@@ -26,12 +26,11 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 * Select the type of the chart you wish to create from the ‘Chart Type’ drop-down menu
 > <img src="./images/charts-7.png" height="300">
 
-
-# Jake to build out from here
-
-
 * You can put in your aggregation query into the ‘Query’ bar to generate results 
 > <img src="./images/charts-8.png" height="300">
 
 * You can also drag and drop fields into the encoding panel and select the relevant details based on your Chart type
 > <img src="./images/charts-9.png" height="300">
+> 
+You are now ready to make the vizualisation of your aggregations.
+**Hint: Charts can and is really close to the aggregation to produce the visualization.**
