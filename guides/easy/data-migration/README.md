@@ -154,7 +154,7 @@ The `mode` field can be left to it's current value of `insert` as we will be ins
 
 The `uri` field needs the MongoDB Connection string to be added, including your credentials. If you already have a MongoDB Atlas cluster running (e.g. that have previously used as part of this workshop), you should use it for this exercise - otherwise you will need to create your own. 
 
-To find your connection string, you will have to go to your cluster's page and click on the "Connect" button,
+To find your connection string, you will have to go to your cluster's page and click on the "Connect" button:
 
 > <img src="./images/connect.png" height="150">
 
