@@ -4,4 +4,4 @@ Visualise the data you loaded into your MongoDB Atlas cluster in [step 2](../dat
 
 In this section we want a visualization of the two aggregation you have done in the previous step.
 
-Once you are done with it you can compare your solution to [Solution A](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation1Charts.png) and [Solution B](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation2Chart.png)
+Once you are done with it you can compare your solution to [Solution A](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/Aggregation1Charts.png) and [Solution B](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/Aggregation2Chart.png)
