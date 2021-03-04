@@ -174,7 +174,7 @@ Now there is only the rate_plan left. Our Relational Database has another table 
 For that, we can use the previously learned function **nested** in the callssection.
 You can query the calls table in your MySQL shell if you want to see what the data look like.
 ```
-rate_plam
+rate_plan
 
 rate_plan_id | description | type |
 -----------------------------------
