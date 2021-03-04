@@ -32,20 +32,22 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 * You can also drag and drop fields into the encoding panel and select the relevant details based on your Chart type
 > <img src="./images/charts-9.png" height="100">
 
-## First aggregation visualization
+## Visualising the first Aggregation Exercise: Average Call Duration by Gender
 
-Now that you are setup with Charts, you can select the ```Hackathon.customers``` collection as you data and put the ```call_duration``` in the x and ```gender``` in the y.
-As in the aggregation pipeline, you want to ```unwind``` the ```call_duration``` to have one document per calls and then the average ```mean```.
-For the ```gender``` you want it as ```Value```.
-Then you can go into ```Customize``` to enable the ```Data Value Label```.
-You can see the result in the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation1Charts.png).
-Values may vary depending on the session.
+* Select the '''Hackathon.customers''’ collection as your data source
+* We suggest using the ‘Bar Chart’ graph for this exercise (but feel free to experiment with other visualisations if you prefer!)
+* The relevant fields for this chart are ''‘call_duration’'' and ''‘gender''’  
+* As you did in your aggregation pipeline query, you would need to use the ''''$unwind''' and '''$mean''' operators 
+* Remember to edit the ‘Data Value Label’ to customize! 
+* Once you're done, you can see a [Sample Result](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation1Charts.png) here. However, please note that there are many possible solutions to this exercise. 
 
-## Second aggregation visualization
+## Visualising the second Aggregation Exercise: Peak Calling Time
 
-For the second aggregation we will filter the data beforehand using the ```Query``` function.
-Once you have put the aggregation pipeline in the ```Query``` field, you will see only the ```_id``` and ```count``` as ```Fields``` on the left.
-You can drag each one in the ```x``` field and ```y``` field to get the visualization.
-Charts will automatically check the ```Binning``` option but we want to see the ```count``` for each hour so we will uncheck this option and select ```Sum``` for the ```count``` field.
-The result should look like this [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation2Chart.png).
-Values may vary depending on the session.
+* Select the '''Hackathon.customers''' collection as your data source
+* We suggest using the ‘Bar Chart’ graph for this exercise (but feel free to experiment with other visualisations if you prefer!)
+* As this is a more complex aggregation, it would be a good idea to filter your data before you dive into creating your charts. To do this, enter your aggregation query from Exercise 3 (b) and enter it into the query field as shown in Step 6 of the Instructions above
+* You will see that Charts has filtered out the fields available as well. For this exercise, '''id''' and '''count''' are the relevant fields
+* A useful operator to use would be '''$sum'''
+* Remember to edit the ‘Data Value Label’ to customize! 
+* Once you are done, you can see a [Sample Result](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation2Chart.png) here.
+However, please note that there are many possible solutions to this exercise.
