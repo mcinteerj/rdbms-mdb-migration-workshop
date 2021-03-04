@@ -15,6 +15,7 @@ In this exercise, you will use MongoDB’s powerful Aggregation Pipeline to run 
 **Aggregation Stages**
 
 > [$unwind](https://docs.mongodb.com/manual/reference/operator/aggregation/unwind/) - Used to unwind array fields (i.e. work with array values on an individual basis)
+
 > [$group](https://docs.mongodb.com/manual/reference/operator/aggregation/group/) - Used to group or summarise data (e.g. generate a count value)
 
 **Aggregation Operators**
