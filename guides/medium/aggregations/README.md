@@ -2,7 +2,7 @@
 
 In this exercise, you will use MongoDB’s powerful Aggregation Pipeline to run analytics queries on the collection(s) you created in the previous exercise. 
 
-**You have received the following requests from your marketing team: **
+**You have received the following requests from your marketing team:**
 
 (a)  Find out the average call duration by Gender across all subscribers (Assume that the data contains only two types of genders: ‘Male’ and ‘Female’).
 
