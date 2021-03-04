@@ -35,7 +35,7 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 ## Visualising the first Aggregation Exercise: Average Call Duration by Gender
 
 * Select the ```Hackathon.customers``` collection as your data source
-* We suggest using the ‘Column' Chart’ for this exercise (but feel free to experiment with other visualisations if you prefer!)
+* We suggest using the ‘Column' Chart for this exercise (but feel free to experiment with other visualisations if you prefer!)
 * The relevant fields for this chart are ```call_duration``` and ```gender```  
 * As you did in your aggregation pipeline query, you would need to use the ```$unwind``` and ```$mean``` operators 
 * You can go to the 'Customize' tab to modify colours and add 'Data Value Labels'
