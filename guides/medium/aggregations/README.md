@@ -41,3 +41,5 @@ In order to build out your aggregation pipeline, you can use the following ways:
 2. Alternatively, you can utilise MongoDB Compass for the same. Navigate to the ‘Aggregations’ tab once you’re inside your collection
 
    -a Click on the ‘Add Stage’ button and start building out your aggregation pipeline stage-by-stage. You can also preview a sample of the aggregated results on the side. You can continue to add more stages by using the ‘Add Stage’ button.
+
+Once you are done you can compare your aggregation with the [Solution A](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation/Aggregation1.md) and [Solution B](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation/Aggregation2.md)
