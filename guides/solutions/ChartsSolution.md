@@ -39,7 +39,7 @@ db.customers.aggregate(
 }}]
 )
 ```
-* You would notice that after the filtering, only two fields are now available under the ‘Fields’ panel on the left - ```_id``` and ```count``
+* You would notice that after the filtering, only two fields are now available under the ‘Fields’ panel on the left - ```_id``` and ```count```
 * Drag the ```_id``` field to the X-Axis variable in the ‘Encode’ tab. You will notice that it automatically enables ‘Binning’, but since we wish to visualise the ```count``` for each hour, we wouldn’t need to use it. Therefore, disable ‘Binning’ 
 * Drag the ```count``` field to the Y-Axis. From the ‘Aggregate’ drop-down, select ‘SUM’, as we require the total number of calls for each hour. 
 * This is what your configuration panel should look like:
