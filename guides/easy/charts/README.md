@@ -51,5 +51,4 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 * A useful operator to use would be ```$sum```
 * You can go to the 'Customize' tab to modify colours and add 'Data Value Labels'
 * Remember to enter a 'Title' and a short 'Description' to your Chart as well! 
-* Once you are done, you can see a [Sample Result](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/Charts_Exercise2_Result.png) here.
-However, please note that there are many possible solutions to this exercise.
+* Once you are done, you can see a [Sample Result](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/Charts_Exercise2_Result.png) here. However, please note that there are many possible solutions to this exercise.
