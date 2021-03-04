@@ -29,6 +29,12 @@ $dateToParts
 $sum
 ```
 
+## Useful Links:
+1. SQL to MongoDB Mapping Chart: https://docs.mongodb.com/manual/reference/sql-comparison/
+2. SQL to Aggregation Mapping Chart: https://docs.mongodb.com/manual/reference/sql-aggregation-comparison/ 
+3. Aggregation Pipeline Quick Reference: https://docs.mongodb.com/manual/meta/aggregation-quick-reference/
+
+
 ## Instructions:
 
 In order to build out your aggregation pipeline, you can use the following ways:
