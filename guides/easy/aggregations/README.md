@@ -2,33 +2,49 @@
 
 In this exercise, you will use MongoDB’s powerful Aggregation Pipeline to run analytics queries on the collection(s) you created in the previous exercise. 
 
+<<<<<<< Updated upstream
 **You have received the following requests from your marketing team:**
 
 (a) Find out the average call duration by Gender across all subscribers (Assume that the data contains only two types of genders: ‘Male’ and ‘Female’).
 
 (b) Find out the ‘Peak Calling Time’ by analysing the total number of calls made per hour by all subscribers (Note: Group the data by hour, starting from 00 to 23
+=======
+***You have received the following requests from your marketing team:***
+> 1. Find out the **average call duration by Gender** across all subscribers
+
+> 2. Find out the **Peak Calling Hour** by analysing the total number of calls made per hour by all subscribers (Note: Group the data by hour, starting from 00 to 23
+>>>>>>> Stashed changes
 
 
 ## Useful Operators:
 
-For Aggregation Exercise (a):
+### Aggregation Exercise 1:
 
-```
-$unwind
-$group
-$avg
-$sum
-```
+**Aggregation Stages**
 
-For Aggregation Exercise (b):
+> [$unwind](https://docs.mongodb.com/manual/reference/operator/aggregation/unwind/) - Used to unwind array fields (i.e. work with array values on an individual basis)
 
-```
-$unwind
-$project
-$dateFromString
-$dateToParts
-$sum
-```
+> [$group](https://docs.mongodb.com/manual/reference/operator/aggregation/group/) - Used to group or summarise data (e.g. generate a count value)
+
+**Aggregation Operators**
+
+> [$avg](https://docs.mongodb.com/manual/reference/operator/aggregation/avg/) - Used to get an average of number values
+
+> [$sum](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/) - Used to add multiple number values together
+
+### Aggregation Exercise 2:
+
+**Aggregation Stages**
+
+> [$unwind](https://docs.mongodb.com/manual/reference/operator/aggregation/unwind/) - Used to unwind array fields (i.e. work with array values on an individual basis)
+
+> [$project](https://docs.mongodb.com/manual/reference/operator/aggregation/project/) - Used to include/exclude/alter specific fields
+
+> [$dateFromString](https://docs.mongodb.com/manual/reference/operator/aggregation/dateFromString/) - Used to create a date value from a string
+
+> [$dateToParts](https://docs.mongodb.com/manual/reference/operator/aggregation/dateToParts/) - Used to separate a date value into its parts (e.g. day, hour, minute etc)
+
+> [$sum](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/) - Used to add multiple number values together
 
 ## Useful Links:
 1. SQL to MongoDB Mapping Chart: https://docs.mongodb.com/manual/reference/sql-comparison/
@@ -51,4 +67,12 @@ In order to build out your aggregation pipeline, you can use the following ways:
 
    - Click on the ‘Add Stage’ button and start building out your aggregation pipeline stage-by-stage. You can also preview a sample of the aggregated results on the side. You can continue to add more stages by using the ‘Add Stage’ button.
 
-### Once finished you can compare your result with the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation1.md) for the aggregation A and the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation2.md) for the aggregation B
+
+## Solutions
+Once finished you can compare your result with the solutions:
+* [Aggregation 1](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation1.md)
+* [Aggregation 2](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation2.md)
+
+## Next Step
+
+Once you have completed both aggregations, you're ready to head to the next step: [MongoDB Charts](../charts/).
