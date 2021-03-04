@@ -9,11 +9,12 @@ This section provides a step-by-step guide to come up with a visualization for e
 * In the ‘Array Reductions’ drop down for calls, choose the method ```Unwind Array```. This is done to obtain one document per call.
 * Then, from the ‘Aggregate’ drop down, select ‘Mean’.
 * This is what the configuration panel should look like: 
+> <img src="./Charts_Exercise1_Configuration.png" height="300">
 *You should now see a Chart on your screen
 * Optionally, you can go to the ‘Customize’ tab and enable ‘Data Value Labels’ under the ‘Chart Elements’. You can also play around with colours and other visual features.  
 * Finally, you can give your chart a title by editing the ‘Enter a title’ field, and you may also add a description by editing the ‘Enter a description’ field on the chart.
 Here’s what your chart should look like:
-
+> <img src="Charts_Exercise1_Result.png" height="300">
 
 ##Visualising the first Aggregation Exercise: Average Call Duration by Gender
 * Select the ```Hackathon.customers``` collection as your Data Source
@@ -42,10 +43,11 @@ db.customers.aggregate(
 * Drag the ```_id``` field to the X-Axis variable in the ‘Encode’ tab. You will notice that it automatically enables ‘Binning’, but since we wish to visualise the ```count``` for each hour, we wouldn’t need to use it. Therefore, disable ‘Binning’ 
 * Drag the ```count``` field to the Y-Axis. From the ‘Aggregate’ drop-down, select ‘SUM’, as we require the total number of calls for each hour. 
 * This is what your configuration panel should look like:
+> <img src="Charts_Exercise2_Configuration.png" height="300">
 * You should now be able to see a column chart on your screen 
 * Optionally, you can go to the ‘Customize’ tab and enable ‘Data Value Labels’ under the ‘Chart Elements’. You can also play around with colours and other visual features. 
 * Finally, you can give your chart a title by editing the ‘Enter a title’ field, and you may also add a description by editing the ‘Enter a description’ field on the chart.
 * Here’s what your chart should look like:
-> <img src="./Charts_Exercise1_Configuration.png" height="300">
+> <img src="Charts_Exercise2_Result.png" height="300">
 
 
