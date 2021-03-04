@@ -280,8 +280,8 @@ template: {
       "address": {
           "street": "$street",
           "zip":"$zip", 
-              "city":"$city", 
-                  "country_code":"$country_code"
+          "city":"$city", 
+          "country_code":"$country_code"
       },
       "calls": [ "@callssection" ]
     }
