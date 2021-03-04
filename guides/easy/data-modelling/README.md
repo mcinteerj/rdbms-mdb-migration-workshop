@@ -132,7 +132,7 @@ Keep in mind that the database supports a Customer Billing System - **the most c
 
 ### Solution
 
-Once you’ve created your sample, see here to compare it to our [solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/DataModellingSolution.md). 
+Once you’ve created your sample, see here to compare it to our [solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/DataModelling/DataModellingSolution.md). 
 
 ## Next Step
 
