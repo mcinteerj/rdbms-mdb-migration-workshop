@@ -172,7 +172,13 @@ With that fucntionality you can make MongoSyphon use the parameter for each ```s
 To call that section, you simply put another field in your start section's template as seen in the example.
 Now there is only the rate_plan left. Our Relational Database has another table which is linked to the calls' one.
 For that, we can use the previously learned function **nested** in the callssection.
+You can query the calls table in your MySQL shell if you want to see what the data look like.
+```
+rate_plam
 
+rate_plan_id | description | type |
+-----------------------------------
+```
 
 You are now all set to make the migration.
 You can head to your shell in the MongoSyphon's directory and make the following command:
