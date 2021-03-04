@@ -100,7 +100,6 @@ Keep in mind that the database supports a Customer Billing System - **the most c
 ### Hints
 
 * Data from all three tables should be **denormalized** into a single document
-* [This blog](https://developer.mongodb.com/article/mongodb-schema-design-best-practices/) is a good example of how it should look (pay particular attention to embedding!)
 * For the purposes of this exercise, you can assume that there will be a **maximum of 50 calls associated with each customer** - in other words, the number of fields is 'bounded' at 50 and hence it may be appropriate to have them all in a single array field.
 
 ### Solution
