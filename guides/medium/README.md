@@ -1,6 +1,6 @@
 Return to the workshop overview page [here](..).
 # Medium Guide
-Welcome to the 'Medium' guide for the RDBMS to MongoDB Migration workshop. This guide is meant for people who are relatively new to working with MongoDB and provides guidance to complete the workshop exercises. 
+Welcome to the 'Medium' guide for the RDBMS to MongoDB Migration workshop. This guide is meant for people who have used MongoDB, but are still relatively new. It provides guidance to complete the workshop exercises. 
 
 The workshop involves migrating a database from MySQL to MongoDB and involves re-modelling the data as well as additional steps to build aggregation pipelines and charts. 
 

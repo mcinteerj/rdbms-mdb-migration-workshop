@@ -49,47 +49,19 @@ The output of this exercise should be a JSON sample document that is an example 
 
 > <img src="./images/data-modelling-1.png" height="300">
 
-### Customers Table
-
+If you are familiar with SQL and want to look directly at the data in the MySQL database, you can connect using the following parameters:
 ```
-mysql> select * from customers limit 1;
-```
-
-```
-+---------------+--------+---------------+------------------------+--------------+---------------+-------------------+----------+------+--------------+
-| subscriber_id | gender | name          | email                  | phone_number | date_of_birth | street            | zip      | city | country_code |
-+---------------+--------+---------------+------------------------+--------------+---------------+-------------------+----------+------+--------------+
-| S000000999    | F      | Jane Doe      | jane123@gmail.com      | 019557 58345 | 1921-03-29    | 570 Earhart Trail | VL7M 7ZG | Bury | UK           |
-+---------------+--------+---------------+------------------------+--------------+---------------+-------------------+----------+------+--------------+
+{
+    "uri": "jdbc:mysql://database-1.cb7xvxwyioz4.eu-west-3.rds.amazonaws.com:3306/telecom?useUnicode=true&useServerPrepStmts=true&useSSL=false",
+    "user": "bt-hack",
+    "password": "H@ckathon1"
+}
 ```
 
-### Calls Table
+For example, **if** connecting you have the MySQL command line client installed, you could use the following command (note: this is optional for those who want to connect directly to the source DB and already have a client installed):
 
 ```
-mysql> select * from calls limit 1;
-```
-
-```
-+---------------+--------------+---------------------+---------------+---------------------+
-| subscriber_id | rate_plan_id | connected_party_num | call_duration | date_time_stamp     |
-+---------------+--------------+---------------------+---------------+---------------------+
-| S000000999    | RP00000001   | 0534 052 0241       |           790 | 2020-03-29 20:40:16 |
-| S000000999    | RP00000001   | 0220 381 9343       |          1061 | 2020-04-13 18:32:24 |
-+---------------+--------------+---------------------+---------------+---------------------+
-```
-
-### Rate Plans Table
-
-```
-mysql> select * from rate_plan limit 1;
-```
-
-```
-+--------------+------------------+------+
-| rate_plan_id | description      | type |
-+--------------+------------------+------+
-| RP00000001   | Phone calls only | A    |
-+--------------+------------------+------+
+mysql -h database-1.cb7xvxwyioz4.eu-west-3.rds.amazonaws.com -P 3306 -u bt-hack --password="H@ckathon1"
 ```
 
 ## Instructions
