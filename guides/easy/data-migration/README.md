@@ -358,7 +358,7 @@ rateplansection:{
 }
 ```
 You are now all set to do the migration.
-If you are unsure about your file, you can get the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/DataMigrationSolution.json)
+If you are unsure about your file, you can get the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/DataMigration/DataMigrationSolution.json)
 
 ## Executing the Migration
 Download the MongoSyphon.jar file from [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/raw/main/resources/MongoSyphon.jar).
