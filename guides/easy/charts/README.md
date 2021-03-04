@@ -42,7 +42,7 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 * Remember to enter a 'Title' and a short 'Description' to your Chart as well! 
 * Once you're done, you can see a [Sample Result](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation1Charts.png) here. However, please note that there are many possible solutions to this exercise. 
 
-## Visualising the second Aggregation Exercise: Peak Calling Time
+## Visualising the second Aggregation Exercise: Total Calls per Hour of the Day
 
 * Select the ```Hackathon.customers``` collection as your data source
 * We suggest using the ‘Column' Chart for this exercise (but feel free to experiment with other visualisations if you prefer!)
