@@ -1,11 +1,7 @@
 # Overview
 
-In this section we will migrate the data from the Relationnal Database through MongoSyphon.
-The goal is to come up with the config.js file that applies the schema.
+In this section the goal is to migrate the data from the Relationnal Database to MongoDB.
 
-Disclaimer: The following instructions are taken from the MongoSyphon GitHub.
-MongoSyphon is an Open Source tool that is not supported (officially and otherwise) by MongoDB.
-Information contained in this readme may be inacurate or not reflect the full process behind the program.
 
 ## [Config.js](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/resources/MongoSyphonRessources/configs/Hackathon.js) template and how it works
 
