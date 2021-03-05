@@ -1,4 +1,5 @@
 Return to the workshop overview page [here](..).
+
 # Hard Guide
 Welcome to the 'Hard' guide for the RDBMS to MongoDB Migration workshop. This guide is meant for people who are confident with relational systems, ETL's and MongoDB. 
 
@@ -71,3 +72,9 @@ You can see example solutions (depending on your data model) here:
 In this final section, you should use MongoDB Charts (provided with your MongoDB Atlas cluster) to create visual versions of the aggregations you created in step 3 (Aggregation Framework). 
 
 You can see example solution charts for this exercise [here](../solutions/Charts/ChartsSolution.md).
+
+# List of Guides
+* [Design Your Target MongoDB Data Model](data-modelling)
+* [Migrate Data From MySQL to MongoDB (including transforming the data)](data-migration)
+* [Aggregation Framework for Analytics](aggregations)
+* [Visualising Data Using MongoDB Charts](charts)

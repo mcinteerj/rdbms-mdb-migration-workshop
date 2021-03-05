@@ -1,3 +1,5 @@
+Return to the root of the easy guide [here](..).
+
 # Overview
 
 The goal of this section is to migrate data from MySQL to MongoDB Atlas and ensure that the data is transformed through the migration process into an data model optimised for MongoDB.

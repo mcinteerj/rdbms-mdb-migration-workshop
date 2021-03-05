@@ -1,3 +1,5 @@
+Return to the root of the medium guide [here](..).
+
 # MongoDB Schema Design
 
 Using the relational database schema as a reference for the dataset, design the MongoDB Schema which would be used by the Customer Billing System. 

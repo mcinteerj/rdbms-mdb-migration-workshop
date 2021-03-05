@@ -1,4 +1,5 @@
 Return to the workshop overview page [here](..).
+
 # Medium Guide
 Welcome to the 'Medium' guide for the RDBMS to MongoDB Migration workshop. This guide is meant for people who have used MongoDB, but are still relatively new. It provides guidance to complete the workshop exercises. 
 

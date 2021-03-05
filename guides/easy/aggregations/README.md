@@ -1,3 +1,5 @@
+Return to the root of the easy guide [here](..).
+
 # Aggregation Pipeline
 
 In this exercise, you will use MongoDB’s powerful Aggregation Pipeline to run analytics queries on the collection(s) you created in the previous exercise. 

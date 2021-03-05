@@ -1,3 +1,5 @@
+Return to the root of the medium guide [here](..).
+
 # Overview
 
 In this section we will migrate the data from the Relationnal Database through MongoSyphon.
