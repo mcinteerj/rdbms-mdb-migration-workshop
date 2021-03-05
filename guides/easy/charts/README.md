@@ -40,7 +40,6 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 * As you did in your aggregation pipeline query, you would need to use the ```$unwind``` and ```$mean``` operators 
 * You can go to the 'Customize' tab to modify colours and add 'Data Value Labels'
 * Remember to enter a 'Title' and a short 'Description' to your Chart as well! 
-* Once you're done, you can see a [Sample Result](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/Charts_Exercise1_Result.png) here. However, please note that there are many possible solutions to this exercise. 
 
 ## Visualising the second Aggregation Exercise: Total Calls per Hour of the Day
 
@@ -51,4 +50,6 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 * A useful operator to use would be ```$sum```
 * You can go to the 'Customize' tab to modify colours and add 'Data Value Labels'
 * Remember to enter a 'Title' and a short 'Description' to your Chart as well! 
-* Once you are done, you can see a [Sample Result](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/Charts_Exercise2_Result.png) here. However, please note that there are many possible solutions to this exercise.
+
+
+Once you have done both charts, you can review your result again the solution [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/ChartsSolution.md) here. However, please note that there are many possible solutions to this exercise.
