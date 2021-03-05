@@ -346,7 +346,7 @@ callssection: {
     mergeon:"subscriber_id"
 }
 ```
-**To optimize the template we will use the mergeon method: In the query we will order the calls by subscriber_id in DESC order and merge the table with the ```Customers'``` one on the field subscriber_id like a JOIN operation in SQL. This will limit the trips with the Database and by doing so shorten the worktime.**
+**To optimize the template we will use the mergeon method: In the query we will order the calls by subscriber_id in DESC order and merge the table with the ```Customers'``` one on the field ```subscriber_id``` like a JOIN operation in SQL. This will limit the trips with the Database and by doing so shorten the worktime.**
 
 
 Now that you are used to all of the main elements here is the `rateplansection`, as previously, you can query the rate_plan table from your MySQL shell to see what the data looks like:
