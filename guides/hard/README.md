@@ -33,7 +33,7 @@ You can safely assume that no subscriber will have more than 50 calls for this e
 
 If you are struggling it may be worth reverting to the [Medium Guide](../medium/data-modelling/) for more detailed instructions.
 
-If you want to check your data model, you can compare it against [this best practice solution](../solutions/DataModellingSolution.md).
+If you want to check your data model, you can compare it against [this best practice solution](../solutions//DataModelling/DataModellingSolution.md).
 
 ## 2. Migrate Data From MySQL to MongoDB (including transforming the data)
 
