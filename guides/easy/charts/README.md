@@ -53,4 +53,8 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 * Remember to enter a 'Title' and a short 'Description' to your Chart as well! 
 
 
-Once you have done both charts, you can review your result again the solution [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/ChartsSolution.md) here. However, please note that there are many possible solutions to this exercise.
+Once you have done both charts, you can review your result again the solution [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/ChartsSolution.md). However, please note that there are many possible solutions to this exercise.
+
+## Complete
+
+Congratulations! You've finished all of the exercises. Click [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/) to return to the home of this repository.

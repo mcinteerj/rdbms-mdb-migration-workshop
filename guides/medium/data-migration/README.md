@@ -197,5 +197,8 @@ You should see after a little less than a minute the following message:
 100 records converted in 29 seconds at an average of 3 records/s
 ```
 
-You are done!
-Your data is now on your cluster with the right schema to go through the next step.
+You are done! Your data is now on your cluster with the right schema to go through the next step.
+
+## Next Step
+
+Once you have completed both aggregations, you're ready to head to the next step: [MongoDB Aggregations](../aggregations/).

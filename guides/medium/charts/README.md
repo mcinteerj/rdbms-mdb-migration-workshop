@@ -38,3 +38,7 @@ You are now ready to make the vizualisation of your aggregations.
 **Hint: Charts can and is really close to the aggregation framework to produce the visualization.**
 
 Once you are done you can compare your solution to the [Solution A](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/Aggregation1Charts.png) and [Solution B](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/Aggregation2Chart.png)
+
+## Complete
+
+Congratulations! You've finished all of the exercises. Click [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/) to return to the home of this repository.

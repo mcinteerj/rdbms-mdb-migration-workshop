@@ -385,3 +385,7 @@ After some time (<1 min) you should see the following message:
 If you hit any issues at this point, please see [Troubleshooting: Common Issues](./troubleshooting.md) or ask for help.
 
 You are done! Your data is now on your cluster with the right schema to go through the next step.
+
+## Next Step
+
+Once you have completed both aggregations, you're ready to head to the next step: [MongoDB Aggregations](../aggregations/).
