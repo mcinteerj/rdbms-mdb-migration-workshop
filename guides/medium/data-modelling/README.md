@@ -55,14 +55,14 @@ If you are familiar with SQL and want to look directly at the data in the MySQL 
 {
     "uri": "jdbc:mysql://database-1.cb7xvxwyioz4.eu-west-3.rds.amazonaws.com:3306/telecom?useUnicode=true&useServerPrepStmts=true&useSSL=false",
     "user": "bt-hack",
-    "password": "H@ckathon1"
+    "password": "btgameday123!march2021"
 }
 ```
 
 For example, **if** connecting you have the MySQL command line client installed, you could use the following command (note: this is optional for those who want to connect directly to the source DB and already have a client installed):
 
 ```
-mysql -h database-1.cb7xvxwyioz4.eu-west-3.rds.amazonaws.com -P 3306 -u bt-hack --password="H@ckathon1"
+mysql -h database-1.cb7xvxwyioz4.eu-west-3.rds.amazonaws.com -P 3306 -u bt-hack --password="btgameday123!march2021"
 ```
 
 ## Instructions

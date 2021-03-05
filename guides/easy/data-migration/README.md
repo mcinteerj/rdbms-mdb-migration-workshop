@@ -136,7 +136,7 @@ The first section of the template is already completed for you as follows:
 "source": {
     "uri": "jdbc:mysql://database-1.cb7xvxwyioz4.eu-west-3.rds.amazonaws.com:3306/telecom?useUnicode=true&useServerPrepStmts=true&useSSL=false",
     "user": "bt-hack",
-    "password": "H@ckathon1"
+    "password": "btgameday123!march2021"
 }
 ```
 
