@@ -41,7 +41,7 @@ Next, you will need to extract data from the MySQL database and load it into Mon
 
 1. Extract data from MySQL
 2. Transform the data into your Document Data Model
-3. Load it into MongoDB
+3. Load it into MongoDB - If you are using your own ETL the [mongoimport](https://docs.mongodb.com/database-tools/mongoimport/) command can be useful.
 
 ***Note:*** You may prefer to reverse the order of 2/3 and use the MongoDB Aggregation Framework to transform the data once it is loaded into MongoDB.
 
