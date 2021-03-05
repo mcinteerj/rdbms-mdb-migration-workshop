@@ -224,9 +224,10 @@ For this exercise in the start section the query will be `'SELECT * FROM custome
 
 ```
   query: {
-      sql: 'SELECT * FROM customers'
+      sql: 'SELECT * FROM customers ORDER by subscriber_id DESC'
   }
 ```
+**For performance, we will order the subscriber_id in DESC order**
 
 You can try the query on your MySQL shell to see what the data looks like.
 
@@ -340,11 +341,13 @@ callssection: {
         "connected_party_num": "$connected_party_num"
     },
     query: {
-        sql:'SELECT * FROM calls where subscriber_id=?'
+        sql:'SELECT * FROM calls ORDER by subscriber_id DESC'
     },
-    params: [ "subscriber_id" ]
+    mergeon:"subscriber_id"
 }
 ```
+**To optimize the template we will use the mergeon method: In the query we will order the calls by subscriber_id in DESC order and merge the table with the ```Customers'``` one on the field subscriber_id like a JOIN operation in SQL. This will limit the trips with the Database and by doing so shorten the worktime.**
+
 
 Now that you are used to all of the main elements here is the `rateplansection`, as previously, you can query the rate_plan table from your MySQL shell to see what the data looks like:
 
@@ -356,9 +359,12 @@ rateplansection:{
     },
     query:{
         sql:'SELECT * FROM rate_plan where rate_plan_id=?'
-    },params:["rate_plan_id"]
+    },params:["rate_plan_id"],
+    cached:true
 }
 ```
+**To optimize the template we used the ```cached``` fuction to cache the rate_plan table and by doing so limit the trips to the Database**
+
 You are now all set to do the migration.
 If you are unsure about your file, you can get the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/DataMigration/DataMigrationSolution.json)
 
