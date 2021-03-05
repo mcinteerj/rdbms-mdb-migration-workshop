@@ -39,9 +39,9 @@
             "connected_party_number": "$connected_party_id"
         },
         "query": {
-            "sql": "SELECT * FROM calls where subscriber_id=?"
+            "sql": "SELECT * FROM calls where subscriber_id=? ORDER by subscriber_id DESC"
         },
-        "params": [
+        mergeon:
             "subscriber_id"
         ]
     },
@@ -55,6 +55,7 @@
         },
         "params": [
             "rate_plan_id"
-        ]
+        ],
+        cached:true
     }
 }
