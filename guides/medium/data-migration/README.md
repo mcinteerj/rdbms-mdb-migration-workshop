@@ -197,7 +197,9 @@ rate_plan_id | description | type |
 -----------------------------------
 ```
 **To give you more time to try and optimize the template we will use the ```cached``` method:**
+
 This is what the ```rateplansection``` will look like:
+
 ```
 callssection:{
 	template:{
@@ -207,6 +209,7 @@ callssection:{
 	cached:true
 }
 ```
+
 This function will cache the rate_plan table and again limit the trips to the Database.
 
 
