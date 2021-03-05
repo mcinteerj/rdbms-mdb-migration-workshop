@@ -136,7 +136,7 @@ At this point, you can click on the copy button and put it in the uri field bein
 
 ## Query
 
-For this exercise in the start section the query will be **'SELECT * FROM customers'** because we want to build our MongoDB Database with one document per Customer.
+For this exercise in the start section the query will be **'SELECT * FROM customers ORDER BY subscriber_id DESC'** because we want to build our MongoDB Database with one document per Customer and we will use the order in a later step for performance.
 This query will return all of the values countained in the customers table.
 You can try the query on your MySQL shell to see what the data looks like.
 
@@ -170,8 +170,23 @@ subscriber_id | rate_plan_id | connected_party_num | call_duration | date_time_s
 
 Now, thinking about it you may ask yourself: What makes MongoSyphon put the right calls into the right document?
 That's where the parameter is useful as you can see in the ```speciessection```.
-With that fucntionality you can make MongoSyphon use the parameter for each ```subscriber_id``` to give us all their calls.
+With that functionality you can make MongoSyphon use the parameter for each ```subscriber_id``` to give us all their calls.
 To call that section, you simply put another field in your start section's template as seen in the example.
+
+**To give you more time to try and optimize the template we will use this method:**
+In the query we will order the ```calls``` by ```subscriber_id``` in ```DESC``` order and use the function ```mergeon```.
+the ```callssection``` will look like this:
+```
+callssection:{
+	template:{
+	},
+	query:{
+	},
+	mergeon:"subscriber_id"
+}
+```
+This will merge the two table like a JOIN on the ```subscriber_id``` and by doing so limit the Database trips.
+
 Now there is only the rate_plan left. Our Relational Database has another table which is linked to the calls' one.
 For that, we can use the previously learned function **nested** in the callssection.
 You can query the calls table in your MySQL shell if you want to see what the data look like.
@@ -181,6 +196,19 @@ rate_plan
 rate_plan_id | description | type |
 -----------------------------------
 ```
+**To give you more time to try and optimize the template we will use the ```cached``` method:**
+This is what the ```rateplansection``` will look like:
+```
+callssection:{
+	template:{
+	},
+	query:{
+	},
+	cached:true
+}
+```
+This function will cache the rate_plan table and again limit the trips to the Database.
+
 
 You are now all set to make the migration.
 If you are unsure about your file, you can get the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/DataMigration/DataMigrationSolution.json)
