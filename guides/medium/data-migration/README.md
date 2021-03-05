@@ -201,7 +201,7 @@ rate_plan_id | description | type |
 This is what the ```rateplansection``` will look like:
 
 ```
-callssection:{
+rateplansection:{
 	template:{
 	},
 	query:{
