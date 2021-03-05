@@ -6,7 +6,6 @@ While designing the MongoDB Schema, it is important to keep in mind that it shou
 
 This is a very different approach to just considering the relationships in the data itself as you would if you were going through a normalisation process - so it might feel a little weird.  
 
-
 ## Data Modelling Basics: 
 
 MongoDB Documents are designed in the same way as JSON documents, and have the following format: 
