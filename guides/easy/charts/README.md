@@ -15,10 +15,13 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 * In the popup, enter the ‘Title’ of your Dashboard, and a ‘Description’. Once you’re done, click on the ‘Create’ button.
 > <img src="./images/charts-3.png" height="300">
 
-* Once the Dashboard creation is complete, your dashboard would be automatically opened, If not, click on your created dashboard under the ‘Dashboards’ heading:
+* Once the Dashboard creation is complete, your dashboard would be automatically opened, If not, click on your created dashboard under the ‘Dashboards’ heading.
 > <img src="./images/charts-4.png" height="300">
 
-* Once inside the dashboard, click on the ‘Add Chart’ button 
+* Once inside the dashboard, you will see a series of pop-ups as a part of the instructions wizard. For each pop-up, click on ‘OK’ or ‘Next’ to proceed. As an example, the first such pop-up is shown below.
+> <img src="./images/charts-11.png" height="300">
+
+* Next, click on the ‘Add Chart’ button 
 > <img src="./images/charts-5.png" height="300">
 
 * In the create chart screen, start by selecting your Collection as the ‘Data Source’
