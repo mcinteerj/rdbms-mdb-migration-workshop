@@ -32,7 +32,7 @@ Let us look at the different stages in this aggregation pipeline, by using the A
 This is what the first stage of the aggregation pipeline should look like: 
 > <img src="./images/1.1.1.png" height="300">
 
-You should now be able to see an output for this stage, which shows a sample of 20 documents. Notice that in each document, there is only one object (i.e. data of only one call) under ‘calls’
+You should now be able to see an output for this stage, which shows a sample of 20 documents. Notice that in each document, there is only one object (i.e. data of only one call) under ```calls```
 > <img src="./images/1.1.2.png" height="300">
 
 2. ```$group```: The next step is to divide the data into two groups, based on the two possible values for gender in our data - ```M``` (representing ‘Male’) and ```F``` (representing ‘Female’). For this purpose, we use the ```$group``` operator.
