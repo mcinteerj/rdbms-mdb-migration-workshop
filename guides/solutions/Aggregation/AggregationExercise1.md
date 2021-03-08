@@ -2,7 +2,7 @@
 This section provides a detailed solution for the first part of Exercise 3. However, please note that there are many different ways of solving this exercise.
 
 ## Aggregation 1: Average Call Duration by Gender 
-In this exercise, you were asked to find out the average value of the field 'call_duration' across all subscribers, categorized by the two values for the field 'gender' in our database (i.e. 'M', for Male and 'F' for 'Female'). 
+In this exercise, you were asked to find out the average value of the field ```call_duration``` across all subscribers, categorized by the two values for the field ```gender``` in our database (i.e. ```M```, for Male and ```F``` for 'Female'). 
 
 The Aggregation Pipeline for this exercise can be found below: 
 
@@ -23,7 +23,7 @@ The Aggregation Pipeline for this exercise can be found below:
 
 Let us look at the different stages in this aggregation pipeline, by using the Aggregation builder in the Atlas UI or in MongoDB Compass:
 
-1. ```$unwind``` : This operator is used to deconstruct the array field ```calls``` to output a document for each object contained in it. In this case, the objects inside the ‘calls’ array represent the data of a call. Therefore, this step is necessary as we wish to analyse the data of all calls made by all subscribers (and not the data of calls grouped together for each subscriber). 
+1. ```$unwind``` : This operator is used to deconstruct the array field ```calls``` to output a document for each object contained in it. In this case, the objects inside the ```calls``` array represent the data of a call. Therefore, this step is necessary as we wish to analyse the data of all calls made by all subscribers (and not the data of calls grouped together for each subscriber). 
 > * The ```$unwind``` operator has the following syntax:
 > 
 >   ```{ $unwind: <field path> }```
