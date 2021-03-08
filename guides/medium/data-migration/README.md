@@ -8,6 +8,13 @@ There are many commercial ETL tools provided by third parties which can be used 
 
 **Disclaimer:** MongoSyphon is an Open Source tool that is not supported (officially and otherwise) by MongoDB. Information contained in this readme may not reflect the full process behind the program or any enhancements that may be made to it by its contributors in the future.
 
+# MongoSyphon
+In this section we will migrate the data from the Relational Database through MongoSyphon to MongoDB Atlas.
+
+You can find the MongoSyphon.jar file and Config.js template in the [Resources Folder](../../../resources/). The detail below explains how to configure and run MongoSyphon in order to migrate your data. 
+
+Your goal is to create a config.js file which MongoSyphon can use to extract data from  MySQL and transforms it inflight in order to load the data into MongoDB in the data model you created in the [Data Modelling Exercise](../data-modelling/). 
+
 ## Template and how it works
 
 The follwing examples/explanation comes from the official [MongoSyphon GitHub](https://github.com/johnlpage/MongoSyphon) where you can also find more detailed documentation. 
@@ -214,6 +221,7 @@ This function will cache the rate_plan table and again limit the trips to the Da
 
 
 You are now all set to make the migration.
+
 If you are unsure about your file, you can get the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/DataMigration/DataMigrationSolution.json)
 
 You can head to your shell in the MongoSyphon's directory and make the following command:
