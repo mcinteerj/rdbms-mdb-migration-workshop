@@ -52,6 +52,28 @@ We have set this workshop up to cater for a range of skill and experience levels
 2. [Medium Guide](guides/medium) - Allows for those who have limited MongoDB experience, providing some hints/guidance but leaving it up to the student to solve each problem
 3. [Hard Guide](guides/hard) - Sets out only the higher level problem statement for each exercise and leaves it up to the student to work out exactly how to solve the problem
 
+# Site Map
+The list below has links to all of the major pages/sections in this repository and can be used for easy navigation:
+* [Guides](./guides/)
+    * [Easy](./guides/easy/)
+        * [Exercise 1: Data Modelling](./guides/easy/data-modelling/)
+        * [Exercise 2: Data Migration](./guides/easy/data-migration/)
+        * [Exercise 3: Aggregation Framework](./guides/easy/aggregations/)
+        * [Exercise 4: MongoDB Charts](./guides/easy/charts/)
+    * [Medium](./guides/medium/)
+        * [Exercise 1: Data Modelling](./guides/medium/data-modelling/)
+        * [Exercise 2: Data Migration](./guides/medium/data-migration/)
+        * [Exercise 3: Aggregation Framework](./guides/medium/aggregations/)
+        * [Exercise 4: MongoDB Charts](./guides/medium/charts/)
+    * [Hard](./guides/hard/)
+    * [Solutions](./guides/solutions/)
+        * [Exercise 1: Data Modelling](./guides/solutions/data-modelling/)
+        * [Exercise 2: Data Migration](./guides/solutions/data-migration/)
+        * [Exercise 3: Aggregation Framework](./guides/solutions/aggregations/)
+        * [Exercise 4: MongoDB Charts](./guides/solutions/charts/)
+* [Resources](./resources/)
+* [Troubleshooting](./troubleshooting/)
+
 # Resources
 The following links are to external pages which contain further reading and resources for some of the key topics covered in this lab:
 
