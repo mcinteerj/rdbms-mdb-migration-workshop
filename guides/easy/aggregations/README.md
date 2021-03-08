@@ -5,9 +5,10 @@ Return to the root of the easy guide [here](..).
 In this exercise, you will use MongoDB’s powerful Aggregation Pipeline to run analytics queries on the collection(s) you created in the previous exercise. 
 
 ***You have received the following requests from your marketing team:***
-> 1. Find out the **average call duration by Gender** across all subscribers
 
-> 2. Find out the **Peak Calling Hour** by analysing the total number of calls made per hour by all subscribers (Note: Group the data by hour, starting from 00 to 23
+1. Find out the **average call duration by Gender** across all subscribers
+
+2. Find out the **Peak Calling Hour** by analysing the total number of calls made per hour by all subscribers (Note: Group the data by hour, starting from 00 to 23
 
 
 ## Useful Operators:
@@ -24,8 +25,6 @@ In this exercise, you will use MongoDB’s powerful Aggregation Pipeline to run 
 
 > [$avg](https://docs.mongodb.com/manual/reference/operator/aggregation/avg/) - Used to get an average of number values
 
-> [$sum](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/) - Used to add multiple number values together
-
 ### Aggregation Exercise 2:
 
 **Aggregation Stages**
@@ -38,7 +37,13 @@ In this exercise, you will use MongoDB’s powerful Aggregation Pipeline to run 
 
 > [$dateToParts](https://docs.mongodb.com/manual/reference/operator/aggregation/dateToParts/) - Used to separate a date value into its parts (e.g. day, hour, minute etc)
 
+> [$group](https://docs.mongodb.com/manual/reference/operator/aggregation/group/) - Used to group or summarise data (e.g. generate a count value)
+
 > [$sum](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/) - Used to add multiple number values together
+
+> [$sort](https://docs.mongodb.com/manual/reference/operator/aggregation/sort/) - Used to sort all input documents and return them to the pipeline in sorted order
+
+> [$limit](https://docs.mongodb.com/manual/reference/operator/aggregation/limit/) - Used to limit the number of documents passed to the next stage in the pipeline
 
 ## Useful Links:
 1. SQL to MongoDB Mapping Chart: https://docs.mongodb.com/manual/reference/sql-comparison/
