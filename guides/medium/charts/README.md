@@ -32,12 +32,34 @@ MongoDB Charts is included as part of the MongoDB Cloud platform and can be acce
 
 * You can also drag and drop fields into the encoding panel and select the relevant details based on your Chart type
 > <img src="./images/charts-9.png" height="300">
-> 
+
+* In case you accidentally select a wrong field, you can click on the bin icon as shown below to delete it.
+> <img src="./images/charts-10.png" height="300">
+
 You are now ready to make the vizualisation of your aggregations.
 
-**Hint: Charts can and is really close to the aggregation framework to produce the visualization.**
+## Visualising the first Aggregation Exercise: Average Call Duration by Gender
 
-Once you are done you can compare your solution to the [Solution A](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/Aggregation1Charts.png) and [Solution B](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/Aggregation2Chart.png)
+* Select the ```Hackathon.customers``` collection as your data source
+* We suggest using the ‘Column' Chart for this exercise (but feel free to experiment with other visualisations if you prefer!)
+* The relevant fields for this chart are ```call_duration``` and ```gender```  
+* As you did in your aggregation pipeline query, you would need to use the ```$unwind``` and ```$mean``` operators 
+* You can go to the 'Customize' tab to modify colours and add 'Data Value Labels'
+* Remember to enter a 'Title' and a short 'Description' to your Chart as well! 
+
+## Visualising the second Aggregation Exercise: Total Calls per Hour of the Day
+
+* Select the ```Hackathon.customers``` collection as your data source
+* We suggest using the ‘Column' Chart for this exercise (but feel free to experiment with other visualisations if you prefer!)
+* As this is a more complex aggregation, it would be a good idea to filter your data before you dive into creating your charts. To do this, enter your aggregation query from Exercise 3 (b) and enter it into the query field as shown in Step 6 of the Instructions above
+* You will see that Charts has filtered out the fields available as well. For this exercise, ```id``` and ```count``` are the relevant fields
+* A useful operator to use would be ```$sum```
+* You can go to the 'Customize' tab to modify colours and add 'Data Value Labels'
+* Remember to enter a 'Title' and a short 'Description' to your Chart as well! 
+
+**Hint: Producing visualizations with Charts is really close to the Aggregation Framework.**
+
+Once you are done you can compare your solution to the [Solution A](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/Charts_Exercise1_Result.png) and [Solution B](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/Charts_Exercise2_Result.png)
 
 ## Complete
 
