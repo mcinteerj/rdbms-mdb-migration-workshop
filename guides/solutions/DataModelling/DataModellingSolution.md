@@ -16,6 +16,7 @@ The code block below shows a JSON document the represents the relational data pr
        "country_code":"UK"
    },
    "calls": [{
+       "call_id": "C000000001",
        "call_duration":"790",
        "date":"2020-03-29 20:40:16",
        "rate_plan_id":{
@@ -26,6 +27,7 @@ The code block below shows a JSON document the represents the relational data pr
        "connected_party_number":"0534 052 0241"
    },
    {
+       "call_id": "C000000002",
        "call_duration":"1061",
        "date":"2020-04-13 18:32:24",
        "rate_plan_id":{
@@ -75,24 +77,26 @@ There is a Many-to-One relationship from a `Call` to a `Rate Plan`. In these sce
 {
     ...
     "calls": [{
-       "call_duration":"790",
-       "date":"2020-03-29 20:40:16",
-       "rate_plan_id":{
-           "rate_plan_id": "RP00000001",
-           "description":"Phone calls only",
-           "type":"A"
-       },
-       "connected_party_number":"0534 052 0241"
+        "call_id": "C000000001",
+        "call_duration":"790",
+        "date":"2020-03-29 20:40:16",
+        "rate_plan_id":{
+            "rate_plan_id": "RP00000001",
+            "description":"Phone calls only",
+            "type":"A"
+        },
+        "connected_party_number":"0534 052 0241"
     },
     {
-       "call_duration":"1061",
-       "date":"2020-04-13 18:32:24",
-       "rate_plan_id":{
-           "rate_plan_id": "RP00000001",
-           "description":"Phone calls only",
-           "type":"A"
-       },
-       "connected_party_number":"0220 381 9343"
+        "call_id": "C000000002",
+        "call_duration":"1061",
+        "date":"2020-04-13 18:32:24",
+        "rate_plan_id":{
+            "rate_plan_id": "RP00000001",
+            "description":"Phone calls only",
+            "type":"A"
+        },
+        "connected_party_number":"0220 381 9343"
     }]
  }
 ```

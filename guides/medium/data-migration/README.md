@@ -170,8 +170,8 @@ You can query the calls table in your MySQL shell if you want to see what the da
 ```
 Calls
 
-subscriber_id | rate_plan_id | connected_party_num | call_duration | date_time_stamp
-------------------------------------------------------------------------------------
+call_id | subscriber_id | rate_plan_id | connected_party_num | call_duration | date_time_stamp
+----------------------------------------------------------------------------------------------
 ```
 
 Now, thinking about it you may ask yourself: What makes MongoSyphon put the right calls into the right document?

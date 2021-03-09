@@ -246,8 +246,8 @@ To this end, we are making the `"@callssection"` where we will query the calls a
 ```
 Calls
 
-subscriber_id | rate_plan_id | connected_party_num | call_duration | date_time_stamp
-------------------------------------------------------------------------------------
+call_id | subscriber_id | rate_plan_id | connected_party_num | call_duration | date_time_stamp
+----------------------------------------------------------------------------------------------
 ```
 
 Our callssection following the table will be like this:
@@ -255,6 +255,7 @@ Our callssection following the table will be like this:
 ```
 callssection: {
     template: {
+        "call_id": "$call_id",
         "call_duration": "$call_duration",
         "date": "$date_time_stamp",
         "connected_party_num": "$connected_party_num"
@@ -307,16 +308,19 @@ Output:
     "name": "Alexander Hodges",
     "phone_number": "056 2126 1927",
     "calls": [ {
+        "call_id": "C000000001",
         "call_duration": "3",
         "date": "1926-10-01 04:12:20",
         "connected_party_num": "01093 136241"
     },    
     {
+        "call_id": "C000000002",
         "call_duration": "229",
         "date": "1928-03-25 02:15:39",
         "connected_party_num": "019337 08684"
     },
     {
+        "call_id": "C000000003",
         "call_duration": "900",
         "date": "1930-02-22 02:26:34",
         "connected_party_num": "0303 864 8723"
@@ -335,6 +339,7 @@ Here is now our `callssection`:
 ```
 callssection: {
     template: {
+        "call_id": "$call_id",
         "call_duration": "$call_duration",
         "date": "$date_time_stamp",
         "rate_plan_id": "@rateplansection",

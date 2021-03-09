@@ -33,6 +33,7 @@
     },
     "callssection": {
         "template": {
+            "call_id": "$call_id",
             "call_duration": "$call_duration",
             "date": "$date_time_stamp",
             "rate_plan_id": "@rateplansection",
@@ -41,7 +42,7 @@
         "query": {
             "sql": "SELECT * FROM calls where subscriber_id=? ORDER by subscriber_id DESC"
         },
-        mergeon:
+        "mergeon":
             "subscriber_id"
     },
     "rateplansection": {
@@ -55,6 +56,6 @@
         "params": [
             "rate_plan_id"
         ],
-        cached:true
+        "cached":true
     }
 }
