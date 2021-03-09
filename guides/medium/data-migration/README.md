@@ -92,7 +92,7 @@ The namespace field correspond to the database.
 ```
     target : {
       mode: "insert",
-      uri:"mongodb+srv://<user>:<pass>@yourURI?retryWrites=true&w=majority",
+      uri:"mongodb+srv://appUser:AtlasW0rkshop!@yourURI?retryWrites=true&w=majority",
       namespace: "hackathon.customers"
     }
 ```

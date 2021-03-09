@@ -94,7 +94,7 @@ The namespace field correspond to the database.
 ```
     target : {
       mode: "insert",
-      uri:"mongodb+srv://<user>:<pass>@yourURI?retryWrites=true&w=majority",
+      uri:"mongodb+srv://appUser:AtlasW0rkshop!@yourURI?retryWrites=true&w=majority",
       namespace: "<db_name>.<collection_name>"
     }
 ```
@@ -164,7 +164,7 @@ To find your connection string, you will have to go to your cluster's page and c
 
 > <img src="./images/connectapp.png" height="400">
 
-At this point, you can click on the copy button and put it in the uri field being **careful to change the <user> and <password> value**.
+At this point, you can click on the copy button and put it in the uri field being **careful to change the <user> and <password> value** to `appUser:AtlasW0rkshop!`.
 
 > <img src="./images/uri.png" height="300">
 
