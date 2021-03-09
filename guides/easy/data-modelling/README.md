@@ -49,7 +49,7 @@ The output of this exercise should be a JSON sample document that is an example 
 
 ## Relational Schema
 
-> <img src="./images/data-modelling-1.png" height="300">
+> <img src="./images/data_modelling_1_updated.png" height="300">
 
 If you are familiar with SQL and want to look directly at the data in the MySQL database, you can connect using the following parameters:
 ```
