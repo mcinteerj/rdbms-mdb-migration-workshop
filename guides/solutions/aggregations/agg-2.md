@@ -1,5 +1,5 @@
 Return to the workshop overview page [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/).
-s
+
 # Aggregation Pipeline 
 This section provides a detailed solution for the second part of Exercise 3. However, please note that there are many different ways of solving this exercise.
 
