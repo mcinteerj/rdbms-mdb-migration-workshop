@@ -1,7 +1,7 @@
 Return to the workshop overview page [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/).
 
 # Aggregation Pipeline 
-This section provides a detailed solution for the second part of Exercise 3. However, please note that there are many different ways of solving this exercise.
+This section provides a detailed solution for the second part of Exercise 3. However, please note that there may be multiple different ways of solving this exercise.
 
 ## Aggregation 2: Peak Calling Time
 In this exercise, you were asked to find out the time of the day at which the maximum number of calls were made, by analysing the total number of calls made per hour, across all subscribers.

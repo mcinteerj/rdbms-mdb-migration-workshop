@@ -1,7 +1,7 @@
 Return to the workshop overview page [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/).
 
 # Aggregation Pipeline 
-This section provides a detailed solution for the first part of Exercise 3. However, please note that there are many different ways of solving this exercise.
+This section provides a detailed solution for the first part of Exercise 3. However, please note that there may be multiple different ways of solving this exercise.
 
 ## Aggregation 1: Average Call Duration by Gender 
 In this exercise, you were asked to find out the average value of the field ```call_duration``` across all subscribers, categorized by the two values for the field ```gender``` in our database (i.e. ```M```, for Male and ```F``` for 'Female'). 
