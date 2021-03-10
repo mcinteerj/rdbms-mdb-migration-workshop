@@ -65,8 +65,8 @@ Now that you have your data loaded into MongoDB, you Marketing team have some in
 Use MongoDB's powerful Aggregation Framework to run analytical queries on the data you loaded into your MongoDB Atlas cluster in the previous step (step 2) in order to answer these questions. 
 
 You can see example solutions (depending on your data model) here:
-* [Aggregation 1](../solutions/aggregations/agg-exercise-1.md)
-* [Aggregation 2](../solutions/aggregations/agg-exercise-2.md)
+* [Aggregation 1](../solutions/aggregations/agg-1.md)
+* [Aggregation 2](../solutions/aggregations/agg-2.md)
 
 ## 4. Visualising Data Using MongoDB Charts
 In this final section, you should use MongoDB Charts (provided with your MongoDB Atlas cluster) to create visual versions of the aggregations you created in step 3 (Aggregation Framework). 

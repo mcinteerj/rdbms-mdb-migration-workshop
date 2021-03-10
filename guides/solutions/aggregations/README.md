@@ -3,8 +3,8 @@ Return to the workshop overview page [here](https://github.com/mcinteerj/rdbms-m
 # Aggregation Exercise Solution
 This folder contains the solutions for the Aggregation Exercises:
 
-* [Exercise 1](./agg-exercise-1.md)
-* [Exercise 2](./agg-exercise-2.md)
+* [Aggregation 1](./agg-1.md)
+* [Aggregation 2](./agg-2.md)
 
 # List of Guides
 * [Design Your Target MongoDB Data Model](data-modelling)
