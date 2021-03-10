@@ -119,3 +119,61 @@ In this case, since we only require the highest value to find out the peak calli
 
 The resulting document contains the field ```_id``` with the value ```17``` and the field ```count``` with the value ```55```. This is the final result of our aggregation pipeline, and it represents that the maximum number of calls (55) in the day are made at the hour 1700.
 > <img src="./images/2.6.2.png" height="300">
+
+
+### Optimising the Solution
+
+In stages 2 and 3 of the aggregation pipeline above, we used ```$project```. It is a useful way to limit the number of fields displayed as the result of the stage, and can be handy during development and debugging.
+
+However, please note that it is best practice to only use ```$project``` if you need to reshape or transform the final output document(s) as the last stage of your pipeline,. Otherwise, it may hinder the internal optimisations performed during the parsing of your pipeline.
+
+Therefore, we would suggest using ```$set``` instead of ```$project``` for a better performing aggregation pipeline: 
+
+```
+[{
+    $unwind: {
+        path: “$calls”
+    }
+}, {
+    $set: {
+        “
+        calls.date”: {
+            “
+            $dateFromString”: {
+                dateString: “$calls.date”
+            }
+        }
+    }
+}, {
+    $set: {
+        “
+        calls.date”: {
+            “
+            $dateToParts”: {
+                date: “$calls.date”
+            }
+        }
+    }
+}, {
+    $group: {
+        _id: “$calls.date.hour”,
+        count: {
+            $sum: 1
+        }
+    }
+}, {
+    $sort: {
+        count: -1
+    }
+}, {
+    $limit: 1
+}]
+```
+
+The aggregation stage ```$set``` adds new fields to documents and outputs documents that contain all existing fields from the input documents and newly added fields. It has the following format: 
+
+```
+{ $set: { <newField>: <expression>, ... } }
+```
+
+You should specify the name(s) of the new field(s) you wish to add in ```<newField>``` and set its value to an aggregation expression using ```<expression>```. You can read more about ```$set``` [here](https://docs.mongodb.com/manual/reference/operator/aggregation/set/).
