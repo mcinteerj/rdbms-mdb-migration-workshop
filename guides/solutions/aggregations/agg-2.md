@@ -65,19 +65,19 @@ You should now be able to see an output for this stage, which shows a sample of 
 >
 >```{ $project: { <specification(s)> } }```
 
-In this case, we wish to add a new field ```dateasdate``` that takes the value of ```calls.date```. We also wish to convert the ```date``` value from the data type ```string``` to a ```date``` object, for which we will use the ```$dateFromString``` operator. Hence, this ```$project``` stage in our pipeline should be as follows:
+In this case, we wish to add a new field ```date_as_date``` that takes the value of ```calls.date```. We also wish to convert the ```date``` value from the data type ```string``` to a ```date``` object, for which we will use the ```$dateFromString``` operator. Hence, this ```$project``` stage in our pipeline should be as follows:
 > <img src="./images/2.1_updated.png" height="300">
 
-This should result in output documents with the format shown in the image below. Notice that these documents contain the newly added ```dateasdate``` field per document, and the values in this field are of the data type ```date``` object, as we had specified.
+This should result in output documents with the format shown in the image below. Notice that these documents contain the newly added ```date_as_date``` field per document, and the values in this field are of the data type ```date``` object, as we had specified.
 > <img src="./images/2.2_updated.png" height="300">
 
-3. ```$project```: Since we wish to find out the peak calling time by hour, we now need to further project the ```dateasdate``` field in a format which splits the ```date``` object into its different components. Therefore, we will add another ```$project``` stage to our pipeline, but this time we will use the operator ```$dateToParts```, which returns a document that contains the constituent parts of a given BSON Date value as individual properties.
+3. ```$project```: Since we wish to find out the peak calling time by hour, we now need to further project the ```date_as_date``` field in a format which splits the ```date``` object into its different components. Therefore, we will add another ```$project``` stage to our pipeline, but this time we will use the operator ```$dateToParts```, which returns a document that contains the constituent parts of a given BSON Date value as individual properties.
 > <img src="./images/3.1_updated.png" height="300">
 
-The resulting documents from this stage should contain a new field ```dateasparts```, containing the individual properties of the ```date``` object, as shown below.
+The resulting documents from this stage should contain a new field ```date_as_parts```, containing the individual properties of the ```date``` object, as shown below.
 > <img src="./images/3.2_updated.png" height="300">
 
-4. ```$group```: The next step is to divide the data into groups, based on the possible values for ```dateasparts.hour``` in our data. For this purpose, we will use the ```$group``` operator.
+4. ```$group```: The next step is to divide the data into groups, based on the possible values for ```date_as_parts.hour``` in our data. For this purpose, we will use the ```$group``` operator.
 > * The ```$group``` operator has the following syntax: 
   ```
    $group:
@@ -88,7 +88,7 @@ The resulting documents from this stage should contain a new field ```dateaspart
       }
    }
   ```
-> * In this case, the ```_id``` field should have the value ```$dateasparts.hour``` as we wish to group our data based on this field. 
+> * In this case, the ```_id``` field should have the value ```$date_as_parts.hour``` as we wish to group our data based on this field. 
 > * In the ```<field>``` argument, we can compute any valid expression using accumulator operators. Since we wish to compute the total number of calls made during the hour, , we will use the ```$sum``` operator.
 
 > <img src="./images/4.1_updated.png" height="300">
