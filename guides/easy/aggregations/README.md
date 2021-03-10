@@ -33,17 +33,23 @@ In this exercise, you will use MongoDB’s powerful Aggregation Pipeline to run 
 
 > [$project](https://docs.mongodb.com/manual/reference/operator/aggregation/project/) - Used to include/exclude/alter specific fields
 
-> [$dateFromString](https://docs.mongodb.com/manual/reference/operator/aggregation/dateFromString/) - Used to create a date value from a string
-
-> [$dateToParts](https://docs.mongodb.com/manual/reference/operator/aggregation/dateToParts/) - Used to separate a date value into its parts (e.g. day, hour, minute etc)
+> [$set](https://docs.mongodb.com/manual/reference/operator/aggregation/set/index.html) - Used to add new fields to documents and output documents that contain all existing fields from the input documents and newly added fields
 
 > [$group](https://docs.mongodb.com/manual/reference/operator/aggregation/group/) - Used to group or summarise data (e.g. generate a count value)
-
-> [$sum](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/) - Used to add multiple number values together
 
 > [$sort](https://docs.mongodb.com/manual/reference/operator/aggregation/sort/) - Used to sort all input documents and return them to the pipeline in sorted order
 
 > [$limit](https://docs.mongodb.com/manual/reference/operator/aggregation/limit/) - Used to limit the number of documents passed to the next stage in the pipeline
+
+**Aggregation Operators**
+
+> [$dateFromString](https://docs.mongodb.com/manual/reference/operator/aggregation/dateFromString/) - Used to create a date value from a string
+
+> [$dateToParts](https://docs.mongodb.com/manual/reference/operator/aggregation/dateToParts/) - Used to separate a date value into its parts (e.g. day, hour, minute etc)
+
+> [$sum](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/) - Used to add multiple number values together
+
+> [$substr](https://docs.mongodb.com/manual/reference/operator/aggregation/substr/index.html) - Used to return the substring of a string
 
 ## Useful Links:
 1. SQL to MongoDB Mapping Chart: https://docs.mongodb.com/manual/reference/sql-comparison/
