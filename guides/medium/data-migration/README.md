@@ -222,7 +222,7 @@ This function will cache the rate_plan table and again limit the trips to the Da
 
 You are now all set to make the migration.
 
-If you are unsure about your file, you can get the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/DataMigration/DataMigrationSolution.json)
+If you are unsure about your file, you can get the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/data-migration/data-migration-solution.json)
 
 You can head to your shell in the MongoSyphon's directory and make the following command:
 

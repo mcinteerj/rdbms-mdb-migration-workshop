@@ -69,8 +69,8 @@ In order to build out your aggregation pipeline, you can use the following ways:
 
 ## Solutions
 Once finished you can compare your result with the solutions:
-* [Aggregation 1](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation/Aggregation1.md)
-* [Aggregation 2](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Aggregation/Aggregation2.md)
+* [Aggregation 1](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/aggregations/agg-exercise-1.md)
+* [Aggregation 2](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/aggregations/agg-exercise-2.md)
 
 ## Next Step
 

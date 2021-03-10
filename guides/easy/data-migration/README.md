@@ -371,7 +371,7 @@ rateplansection:{
 **To optimize the template we used the ```cached``` fuction to cache the rate_plan table and by doing so limit the trips to the Database**
 
 You are now all set to do the migration.
-If you are unsure about your file, you can get the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/DataMigration/DataMigrationSolution.json)
+If you are unsure about your file, you can get the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/data-migration/data-migration-solution.json)
 
 ## Executing the Migration
 Download the MongoSyphon.jar file from [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/raw/main/resources/MongoSyphon.jar).

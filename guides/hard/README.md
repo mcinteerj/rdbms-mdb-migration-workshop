@@ -34,7 +34,7 @@ You can safely assume that no subscriber will have more than 50 calls for this e
 
 If you are struggling it may be worth reverting to the [Medium Guide](../medium/data-modelling/) for more detailed instructions.
 
-If you want to check your data model, you can compare it against [this best practice solution](../solutions/DataModelling/DataModellingSolution.md).
+If you want to check your data model, you can compare it against [this best practice solution](../solutions/data-modelling).
 
 ## 2. Migrate Data From MySQL to MongoDB (including transforming the data)
 
@@ -51,7 +51,7 @@ There are multiple possible approaches for this step, such as:
 2. Extracting data from MySQL and loading it into MongoDB and transforming it in palce
 3. Using a third party tool to perform this ETL function (an Open Source option recommended in the Easy/Medium guides is [MongoSyphon](https://github.com/johnlpage/MongoSyphon))
 
-If you use MongoSyphon, you can compare your approach to the solution specified [here](../solutions/DataMigration/DataMigrationSolution.json). 
+If you use MongoSyphon, you can compare your approach to the solution specified [here](../solutions/data-migration/data-migration-solution.json). 
 
 ## 3. Aggregation Framework for Analytics
 
@@ -65,13 +65,13 @@ Now that you have your data loaded into MongoDB, you Marketing team have some in
 Use MongoDB's powerful Aggregation Framework to run analytical queries on the data you loaded into your MongoDB Atlas cluster in the previous step (step 2) in order to answer these questions. 
 
 You can see example solutions (depending on your data model) here:
-* [Aggregation 1](../solutions/Aggregation/AggregationExercise1.md)
-* [Aggregation 2](../solutions/Aggregation/AggregationExercise2.md)
+* [Aggregation 1](../solutions/aggregations/agg-exercise-1.md)
+* [Aggregation 2](../solutions/aggregations/agg-exercise-2.md)
 
 ## 4. Visualising Data Using MongoDB Charts
 In this final section, you should use MongoDB Charts (provided with your MongoDB Atlas cluster) to create visual versions of the aggregations you created in step 3 (Aggregation Framework). 
 
-You can see example solution charts for this exercise [here](../solutions/Charts/ChartsSolution.md).
+You can see example solution charts for this exercise [here](../solutions/charts).
 
 # List of Guides
 * [Design Your Target MongoDB Data Model](data-modelling)
