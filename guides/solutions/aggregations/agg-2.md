@@ -96,6 +96,8 @@ The resulting documents from this stage should contain a new field ```dateaspart
 The documents produced as a result of this stage would have the ```hour``` value as their ```_id``` fields, and in each document, a ```count``` field would be created, containing the result of the ```$sum``` operator. A sample of the results is shown below.
 > <img src="./images/2.4.2.png" height="300">
 
+_**Hint: You may also use the ```$substr``` operator for this purpose. You can find more information about it [here](https://docs.mongodb.com/manual/reference/operator/aggregation/substr/)**_
+
 5. ```$sort```: This stage is used to sort all input documents and return them to the pipeline in sorted order.
 > * The ```$sort``` stage has the following prototype form:
 > ```{ $sort: { <field1>: <sort order>, <field2>: <sort order> ... } }```
