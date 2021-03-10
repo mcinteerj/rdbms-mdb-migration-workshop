@@ -247,7 +247,7 @@ rateplansection:{
 **To optimize the template we used the ```cached``` fuction to cache the rate_plan table and by doing so limit the trips to the Database**
 
 You are now all set to do the migration.
-If you are unsure about your file, you can get the [Solution](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/data-migration/data-migration-solution.json)
+If you are unsure about your file, you can review the [Solution here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/data-migration/data-migration-solution.json).
 
 ## Next Step
 
