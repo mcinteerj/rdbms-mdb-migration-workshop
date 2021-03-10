@@ -24,21 +24,39 @@ Here’s what your chart should look like:
 * In the ‘Query’ field, paste the aggregation query from Exercise 3.1. This is done to pre-process your data. One such possible query could be: 
 ```
 db.customers.aggregate(
-[{$unwind: {
-  path: "$calls"
-}}, 
-{$project: {
-"dateasdate":
-{"$dateFromString":
-{dateString:"$calls.date"}}
-}}, {$project: {
-  "dateasparts":{"$dateToParts":{date:"$dateasdate"}}
-}}, {$group: {
-  _id: "$dateasparts.hour",
-  count: {
-    $sum:1
-  }
-}}]
+[
+    {
+        "$unwind": {
+            "path": "$calls"
+        }
+    },
+    {
+        "$project": {
+            "dateasdate": {
+                "$dateFromString": {
+                    "dateString": "$calls.date"
+                }
+            }
+        }
+    },
+    {
+        "$project": {
+            "dateasparts": {
+                "$dateToParts": {
+                    "date": "$dateasdate"
+                }
+            }
+        }
+    },
+    {
+        "$group": {
+            "_id": "$dateasparts.hour",
+            "count": {
+                "$sum": 1
+            }
+        }
+    }
+]
 )
 ```
 * You would notice that after the filtering, only two fields are now available under the ‘Fields’ panel on the left - ```_id``` and ```count```
