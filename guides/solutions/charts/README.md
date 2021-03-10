@@ -1,4 +1,4 @@
-Return to the workshop overview page [here](..).
+Return to the workshop overview page [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/).
 
 # Charts Solution
 This section provides a step-by-step guide to come up with a visualization for each of the aggregation queries from Exercise 3. However, please note that MongoDB Charts has a wide range of features, and there are many possible ways to visualize this data. 
