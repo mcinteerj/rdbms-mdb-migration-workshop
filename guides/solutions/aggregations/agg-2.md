@@ -127,7 +127,7 @@ The resulting document contains the field ```_id``` with the value ```17``` and 
 
 In stages 2 and 3 of the aggregation pipeline above, we used ```$project```. It is a useful way to limit the number of fields displayed as the result of the stage, and can be handy during development and debugging.
 
-However, please note that it is best practice to only use ```$project``` if you need to reshape or transform the final output document(s) as the last stage of your pipeline,. Otherwise, it may hinder the internal optimisations performed during the parsing of your pipeline.
+However, please note that it is best practice to only use ```$project``` if you need to reshape or transform the final output document(s) as the last stage of your pipeline. Otherwise, it may hinder the internal optimisations performed during the parsing of your pipeline.
 
 Therefore, we would suggest using ```$set``` instead of ```$project``` for a better performing aggregation pipeline: 
 
