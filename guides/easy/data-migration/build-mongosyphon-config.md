@@ -23,8 +23,8 @@ The next section of the template is the `target` section which specifies the par
 ```
 "target": {
     "mode": "insert",
-    "uri": "<Atlas Connection String>",
-    "namespace": "<db_name>.<coll_name>"
+    "uri":"mongodb+srv://appUser:AtlasW0rkshop!@yourURI?retryWrites=true&w=majority",
+    "namespace": "hackathon.customers"
 }
 ```
 
