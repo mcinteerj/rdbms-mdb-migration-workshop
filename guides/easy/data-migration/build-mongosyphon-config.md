@@ -227,7 +227,7 @@ Here is our `callssection`:
     "mergeon":"subscriber_id"
 }
 ```
-**To optimize the template we will use the mergeon method: In the query we will order the calls by subscriber_id in DESC order and merge the table with the ```Customers'``` one on the field ```subscriber_id``` like a JOIN operation in SQL. This will limit the trips with the Database and by doing so shorten the worktime.**
+**To optimize the template we will use the mergeon method rather than a `WHERE` clause with params. In the earlier query we ordered order the calls by subscriber_id in DESC order and merge the table with the ```Customers'``` one on the field ```subscriber_id``` like a JOIN operation in SQL. This will limit the trips with the Database and by doing so shorten the worktime.**
 
 Now that you are used to all of the main elements here is the `rateplansection`, as previously, you can query the rate_plan table from your MySQL shell to see what the data looks like:
 
@@ -244,9 +244,10 @@ Now that you are used to all of the main elements here is the `rateplansection`,
     "cached": true
 }
 ```
-**To optimize the template we used the ```cached``` fuction to cache the rate_plan table and by doing so limit the trips to the Database**
+**To optimize the template we used the ```cached``` funtion to cache the rate_plan table and by doing so limit the trips to the Database**
 
 You are now all set to do the migration.
+
 If you are unsure about your file, you can review the [Solution here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/data-migration/data-migration-solution.json).
 
 ## Next Step
