@@ -138,15 +138,13 @@ Our callssection following the table will be like this:
         "connected_party_num": "$connected_party_num"
     },
     "query": {
-        "sql": 'SELECT * FROM calls where subscriber_id=?'
+        "sql": 'SELECT * FROM calls ORDER by subscriber_id DESC'
     },
-    "params": [ "subscriber_id" ]
+    "mergeon":"subscriber_id"
 }
 ```
 
-For the keen eye, you will observe that we used a **parameter**. That is because we want to make the link between the customer and the calls.
-
-With that query MongoSyphon will use the parameter for each `subscriber_id` will give us all their calls.
+For the keen eye, you will observe that we used `mergeon` merge data from the two tables on the subscriber_id field.
 
 To call that section, you simply put another field in your start section's template as following:
 
@@ -218,11 +216,11 @@ Here is our `callssection`:
         "call_id": "$call_id",
         "call_duration": "$call_duration",
         "date": "$date_time_stamp",
-        "rate_plan_id": "@rateplansection",
         "connected_party_num": "$connected_party_num"
+        "rate_plan_id": "@rateplansection",
     },
     "query": {
-        "sql":'SELECT * FROM calls ORDER by subscriber_id DESC'
+        "sql": 'SELECT * FROM calls ORDER by subscriber_id DESC'
     },
     "mergeon":"subscriber_id"
 }
