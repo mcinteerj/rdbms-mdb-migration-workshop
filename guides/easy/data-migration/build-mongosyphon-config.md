@@ -3,8 +3,11 @@ Return to the root of the easy guide [here](..).
 # National Telecom Config
 Now that you have an understanding of the config file, we can start making one for this exercise.
 
-Use this [sample/skeleton template](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/resources/template-config.json) in order to configure MongoSyphon to migrate your data. The steps below go through how to set up each section of the configuration file. 
+Download this [sample/skeleton config template](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/resources/template-config.json) and use it as the basis to build your own configuration for this exercise. 
 
+In the following step, you will run MongoSyphon with your config file in order to migrate the data to your cluster.
+
+The steps below go through how to set up each section of the configuration file. 
 
 ## Source
 The first section of the template is already completed for you as follows:
@@ -16,14 +19,14 @@ The first section of the template is already completed for you as follows:
 }
 ```
 
-This specifies the required parameters to connect to the MySQL server that you will be extracting data from. We have provided all of the required credentials and connection parameters - you do not need to edit this.
+This specifies the required parameters to connect to the MySQL server that you will be extracting data from. We have provided all of the required credentials and connection parameters - **you do not need to edit this**.
 
 ## Target
 The next section of the template is the `target` section which specifies the parameters required to connect to your Atlas Cluster:
 ```
 "target": {
     "mode": "insert",
-    "uri":"mongodb+srv://appUser:AtlasW0rkshop!@yourURI?retryWrites=true&w=majority",
+    "uri":"mongodb+srv://appUser:AtlasW0rkshop!@DATABASEURI?retryWrites=true&w=majority",
     "namespace": "hackathon.customers"
 }
 ```
@@ -44,9 +47,9 @@ At this point, you can click on the copy button and put it in the uri field bein
 
 > <img src="./images/uri.png" height="300">
 
-Finally, you will need to adjust the `namespace` field in order to set the database and collection name you wish to use for this data. You could use 'telecom' as the DB name and 'customers' as the collection name, like so:
+Finally, you will need to adjust the `namespace` field in order to set the database and collection name you wish to use for this data. You could use 'hackathon' as the DB name and 'customers' as the collection name, like so:
 ```
-    "namespace": "telecom.customers"
+    "namespace": "hackathon.customers"
 ```
 
 ## Template
@@ -59,37 +62,35 @@ See the following example template:
 
 ```
 template: {
-    "_id": "$subscriber_id",
-    "gender": "$gender",
-    "name": "$name",
-    "email": "$email",
-    "phone_number":"$phone_number",
-    "date_of_birth": "$date_of_birth",
-    "address": {
-        "street": "$street", 
-        "zip":"$zip", 
-        "city":"$city", 
-        "country_code":"$country_code"
-    }
+      "subscriber_id": "$subscriber_id",
+      "gender": "$gender",
+      "name": "$name",
+      "email": "$email",
+      "phone_number":"$phone_number",
+      "date_of_birth": "$date_of_birth",
+      "address": {
+          "street": "$street",
+          "zip":"$zip", 
+          "city":"$city", 
+          "country_code":"$country_code"
+      }
 }
 ```
 
 Output:
-
 ```
-
 {
     "_id":"S000000100",
-    "date_of_birth":"1929-09-12",
-    "email": "deermeat1961@protonmail.com",
     "gender": "M",
     "name": "Alexander Hodges",
-    "phone_number": 056 2126 1927,
-    "address":{
-        "street":"426 Estate Walk",
-        "zip":"DL8Z 0ST",
-        "city":"Monmouth",
-        "country_code":"UK"
+    "email": "deermeat1961@protonmail.com",
+    "phone_number": "056 2126 1927",
+    "date_of_birth": "1929-09-12",
+    "address": {
+        "street": "426 Estate Walk",
+        "zip": "DL8Z 0ST",
+        "city": "Monmouth",
+        "country_code": "UK"
     }
 }
 ```
@@ -129,23 +130,23 @@ call_id | subscriber_id | rate_plan_id | connected_party_num | call_duration | d
 Our callssection following the table will be like this:
 
 ```
-callssection: {
-    template: {
+"callssection": {
+    "template": {
         "call_id": "$call_id",
         "call_duration": "$call_duration",
         "date": "$date_time_stamp",
         "connected_party_num": "$connected_party_num"
     },
-    query: {
-        sql: 'SELECT * FROM calls where subscriber_id=?'
+    "query": {
+        "sql": 'SELECT * FROM calls where subscriber_id=?'
     },
-    params: [ "subscriber_id" ]
+    "params": [ "subscriber_id" ]
 }
 ```
 
 For the keen eye, you will observe that we used a **parameter**. That is because we want to make the link between the customer and the calls.
 
-With that query MongoSyphon will use the parameter for each subscriber_id will give us all their calls.
+With that query MongoSyphon will use the parameter for each `subscriber_id` will give us all their calls.
 
 To call that section, you simply put another field in your start section's template as following:
 
@@ -172,17 +173,17 @@ Output:
 ```
 {
     "_id":"S000000100",
+    "gender": "M",
+    "name": "Alexander Hodges",
+    "email": "deermeat1961@protonmail.com",
+    "phone_number": "056 2126 1927",
+    "date_of_birth": "1929-09-12",
     "address": {
         "street": "426 Estate Walk",
         "zip": "DL8Z 0ST",
         "city": "Monmouth",
         "country_code": "UK"
-        },
-    "date_of_birth": "1929-09-12",
-    "email": "deermeat1961@protonmail.com",
-    "gender": "M",
-    "name": "Alexander Hodges",
-    "phone_number": "056 2126 1927",
+    }
     "calls": [ {
         "call_id": "C000000001",
         "call_duration": "3",
@@ -200,8 +201,7 @@ Output:
         "call_duration": "900",
         "date": "1930-02-22 02:26:34",
         "connected_party_num": "0303 864 8723"
-    },
-   ...]
+    }, ...]
 }
 ```
 
@@ -210,38 +210,38 @@ Now there is only the rate_plan left. Our Relational Database has another table 
 
 For that we can use the previously learned function **nested** in the `callssection`.
 
-Here is now our `callssection`:
+Here is our `callssection`:
 
 ```
-callssection: {
-    template: {
+"callssection": {
+    "template": {
         "call_id": "$call_id",
         "call_duration": "$call_duration",
         "date": "$date_time_stamp",
         "rate_plan_id": "@rateplansection",
         "connected_party_num": "$connected_party_num"
     },
-    query: {
-        sql:'SELECT * FROM calls ORDER by subscriber_id DESC'
+    "query": {
+        "sql":'SELECT * FROM calls ORDER by subscriber_id DESC'
     },
-    mergeon:"subscriber_id"
+    "mergeon":"subscriber_id"
 }
 ```
 **To optimize the template we will use the mergeon method: In the query we will order the calls by subscriber_id in DESC order and merge the table with the ```Customers'``` one on the field ```subscriber_id``` like a JOIN operation in SQL. This will limit the trips with the Database and by doing so shorten the worktime.**
 
-
 Now that you are used to all of the main elements here is the `rateplansection`, as previously, you can query the rate_plan table from your MySQL shell to see what the data looks like:
 
 ```
-rateplansection:{
-    template:{
+"rateplansection": {
+    "template": {
         "description":"$description",
         "type":"$type"
     },
-    query:{
-        sql:'SELECT * FROM rate_plan where rate_plan_id=?'
-    },params:["rate_plan_id"],
-    cached:true
+    "query": {
+        "sql":'SELECT * FROM rate_plan where rate_plan_id=?'
+    },
+    "params": [ "rate_plan_id" ],
+    "cached": true
 }
 ```
 **To optimize the template we used the ```cached``` fuction to cache the rate_plan table and by doing so limit the trips to the Database**

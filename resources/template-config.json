@@ -8,11 +8,11 @@
         "target": {
             "mode": "insert",
             "uri": "<Atlas Connection String>",
-            "namespace": "<db_name>.<coll_name>"
+            "namespace": "hackathon.customers"
         },
         "template": {
             // Target Document Structure
-            "other_section": "$other_section"
+            "other_section": "@other_section"
         },
         "query": {
             "sql": "SELECT * FROM XXX"
@@ -27,6 +27,7 @@
         }, 
         "params": [
             "VALUE_X"
-        ]
+        ],
+        "cached": true
     }
 }

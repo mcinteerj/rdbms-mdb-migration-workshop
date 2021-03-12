@@ -61,13 +61,13 @@ The following examples come from the official [MongoSyphon GitHub](https://githu
 }
 ```
 
-As we can see the template is self-describing and therefore quite intuitive to understand.
+As we can see the config file is self-describing and therefore quite intuitive to understand.
 
 There is the first section which is "start" which is the root of the JSON document to be generated, and then subequent sections can be used to embed additional data within your documents. 
 
 In this exemple we can see the other 2 added sections are petsection and speciessection. In this example, the Owner owns one or more pets (meaning the pets field is an array), while each pet has a specific species (meaning the species field is an embedded object). 
 
-The template above would generate documents which look like this:
+The config above would generate documents which look like this:
 ```
 {
 	"_id": 000976,
