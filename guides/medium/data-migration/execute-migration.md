@@ -3,14 +3,6 @@ Return to the root of the easy guide [here](..).
 ## Executing the Migration
 Download the MongoSyphon.jar file from [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/raw/main/resources/MongoSyphon.jar).
 
-To run MongoSyphon, you simply call it with the java programme. For example, in order to print the 'help' information for MongoSyphon, you could run:
-
-```
-java -jar ./MongoSyphon.jar --help
-```
-
-***Note**: This assumes you are in the directory where you have downloaded the jar file*
-
 Assuming that the jar file is in the same directory as your config file you can execute the following command in order to execute the migration:
 
 ```
