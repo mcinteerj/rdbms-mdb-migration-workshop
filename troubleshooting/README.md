@@ -1,22 +1,5 @@
 # Troubleshooting
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-
 ## MongoSyphon does not do anything
 
 ```
@@ -27,6 +10,41 @@
 Solution
 
 Something went wrong, watch the MongoSyphon.log for the [ERROR] line.
+
+# Index
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
+[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+
 
 ## No $find section defined
 ```
