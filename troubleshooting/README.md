@@ -192,3 +192,7 @@ The Column you tried to call in your query is present in another table used. Be 
 
 # Your Data does not look right in your cluster
 
+## Data problem observed
+
+Solution
+
