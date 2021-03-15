@@ -79,6 +79,7 @@ to parse the documents already present in the database.
 
 Solution
 
+There is a missing ',' or '}' at the line 72.
 
 ## JobDescription:26
 ```
@@ -87,12 +88,16 @@ Solution
 
 Solution
 
+There is an error in the command line.
+
 ## Failed to parse command line option
 ```
 13:37:35.906 [main] ERROR c.johnlpage.mongosyphon.MongoSyphon:30 - Failed to parse command line options
 ```
 
 Solution
+
+There is an error in the command line options.
 
 ## Cannot find section named
 ```
@@ -101,12 +106,16 @@ Solution
 
 Solution
 
+The section 'null' is not declared as it should.
+
 ## Unable to connect to RDBMS
 ```
 08:50:55.559 [main] ERROR c.j.mongosyphon.RDBMSConnection:84 - Unable to connect to RDBMS
 ```
 
 Solution
+
+There is an error in the RDBMS connection string.
 
 ## Communications link failure
 ```
@@ -115,12 +124,16 @@ Solution
 
 Solution
 
+
+
 ## Don't know how to handle connection uri
 ```
 09:02:40.106 [main] ERROR c.j.mongosyphon.DocumentGenerator:136 - Don't know how to handle connection uri mysql://rdmbs.rds.amazonaws.com:3306/employees?useUnicode=true&useServerPrepStmts=true&useSSL=false
 ```
 
 Solution
+
+There is an error in the declaration of the uri. It should have ```jdbc:mysql://``` at the beginning.
 
 ## JSONObject must end with '}'
 ```
@@ -129,12 +142,16 @@ Solution
 
 Solution
 
+There is a missing '}' in your config file.
+
 ## Timed out aftrer 30000ms
 ```
 11:33:23.680 [main] ERROR c.j.mongosyphon.MongoBulkWriter:127 - Error: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=yourcluster.mongodb.net:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: yourcluster.mongodb.net}, caused by {java.net.UnknownHostException: yourcluster.mongodb.net}}]
 ```
 
 Solution
+
+There is an error in your cluster's uri.
 
 ## Duplicate key error
 ```
@@ -143,12 +160,16 @@ Solution
 
 Solution
 
+The documents you are trying to insert are already present in your Cluster. You should drop the collection before retrying to migrate your data or use the ```upsert``` or the ```update``` mode. 
+
 ## Access denied
 ```
 08:55:56.580 [main] ERROR c.j.mongosyphon.RDBMSConnection:85 - Access denied for user 'admin'@'localhost' (using password: YES)
 ```
 
 Solution
+
+The user or password provided for the RDBMS is not the correct one.
 
 ## Unknown column
 ```
@@ -157,12 +178,16 @@ Solution
 
 Solution
 
+The column you tried to call in your query is not the right one. Check for typos or your template.
+
 ## Column is ambiguous
 ```
 18:09:15.870 [main] ERROR c.j.mongosyphon.RDBMSConnection:173 - Column <something> in on clause is ambiguous
 ```
 
 Solution
+
+The Column you tried to call in your query is present in another table used. Be careful to use table.column in your query.
 
 
 # Your Data does not look right in your cluster
