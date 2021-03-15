@@ -19,21 +19,21 @@ Something went wrong, watch the MongoSyphon.log for the [ERROR] line.
 
 [Expected a ',' or '}'](#expected-a--or-)
 
-[JobDescription:26](#MongoSyphon-does-not-do-anything)
+[JobDescription:26](#jobdescription26)
 
-[Failed to parse command line option](#MongoSyphon-does-not-do-anything)
+[Failed to parse command line option](#failed-to-parse-command-line-option)
 
-[Cannot find section named](#MongoSyphon-does-not-do-anything)
+[Cannot find section named](#cannot-find-section-named)
 
-[Unable to connect to RDBMS](#MongoSyphon-does-not-do-anything)
+[Unable to connect to RDBMS](#unable-to-connect-to-rdbms)
 
-[Communications link failure](#MongoSyphon-does-not-do-anything)
+[Communications link failure](#communications-link-failure)
 
-[Don't know how to handle connection uri](#MongoSyphon-does-not-do-anything)
+[Don't know how to handle connection uri](#dont-know-how-to-handle-connection-uri)
 
-[JSONObject must end with '}'](#MongoSyphon-does-not-do-anything)
+[JSONObject must end with '}'](#jsonobject-must-end-with-)
 
-[Timed out aftrer 30000ms](#MongoSyphon-does-not-do-anything)
+[Timed out aftrer 30000ms](#timed-out-aftrer-30000ms)
 
 [Duplicate key error](#MongoSyphon-does-not-do-anything)
 
