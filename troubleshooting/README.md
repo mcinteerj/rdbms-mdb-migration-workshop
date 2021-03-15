@@ -13,6 +13,8 @@ Something went wrong, watch the MongoSyphon.log for the [ERROR] line.
 
 # Index
 
+## [MongoSyphon errors](#MongoSyphon-errors)
+
 [MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
 
 [No $find section defined](#no-find-section-defined)
@@ -45,7 +47,9 @@ Something went wrong, watch the MongoSyphon.log for the [ERROR] line.
 
 [Column is ambiguous](#column-is-ambiguous)
 
-# Errors
+## Your Data does not look right on your cluster
+
+# MongoSyphon Errors
 
 ## No $find section defined
 ```
