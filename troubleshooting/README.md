@@ -13,7 +13,7 @@ Something went wrong, watch the MongoSyphon.log for the [ERROR] line.
 
 # Index
 
-## [MongoSyphon errors](#MongoSyphon-errors)
+## [MongoSyphon errors](#mongosyphon-errors-1)
 
 [MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
 
