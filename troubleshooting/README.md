@@ -15,31 +15,31 @@ Something went wrong, watch the MongoSyphon.log for the [ERROR] line.
 
 [MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
 
-[No $find section defined](#No-$find-section-defined)
+[No $find section defined](#no-find-section-defined)
 
-[Expected a ',' or '}'](#Expected-a-','-or-'}')
+[Expected a ',' or '}'](#expected-a--or-)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+[JobDescription:26](#MongoSyphon-does-not-do-anything)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+[Failed to parse command line option](#MongoSyphon-does-not-do-anything)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+[Cannot find section named](#MongoSyphon-does-not-do-anything)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+[Unable to connect to RDBMS](#MongoSyphon-does-not-do-anything)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+[Communications link failure](#MongoSyphon-does-not-do-anything)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+[Don't know how to handle connection uri](#MongoSyphon-does-not-do-anything)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+[JSONObject must end with '}'](#MongoSyphon-does-not-do-anything)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+[Timed out aftrer 30000ms](#MongoSyphon-does-not-do-anything)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+[Duplicate key error](#MongoSyphon-does-not-do-anything)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+[Access denied](#MongoSyphon-does-not-do-anything)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+[Unknown column](#MongoSyphon-does-not-do-anything)
 
 [MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
 
@@ -62,7 +62,7 @@ Solution
 11:18:07.934 [main] ERROR c.j.mongosyphon.JobDescription:26 - ./configs/config.js**cd**
 ```
 Solution
-## There is an error in the command
+## Failed to parse command line option
 ```
 13:37:35.906 [main] ERROR c.johnlpage.mongosyphon.MongoSyphon:30 - Failed to parse command line options
 ```
@@ -72,7 +72,7 @@ Solution
 08:49:32.876 [main] ERROR c.j.mongosyphon.DocumentGenerator:41 - Cannot find section named 'null' in config - aborting
 ```
 Solution
-## Unable connect to the RDBMS
+## Unable to connect to RDBMS
 ```
 08:50:55.559 [main] ERROR c.j.mongosyphon.RDBMSConnection:84 - Unable to connect to RDBMS
 ```
