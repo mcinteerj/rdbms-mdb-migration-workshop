@@ -58,7 +58,19 @@ Something went wrong, watch the MongoSyphon.log for the [ERROR] line.
 
 Solution
 
-You have used another method than ```insert``` for the destination. For the upsert method you need to write the pipeline in the ```template{}``` to parse the documents already present in the database.
+You have used another method than ```insert``` for the destination. For the ```upsert``` or the ```update``` method you need to write the pipeline in the ```template``` :
+
+```
+template: {
+	  "$find" : { ... },
+	  "$set" : { ... },
+	  "$inc" : { ... },
+	  "$push" : {...}
+	}
+```
+
+to parse the documents already present in the database.
+
 
 ## Expected a ',' or '}'
 ```
@@ -66,6 +78,7 @@ You have used another method than ```insert``` for the destination. For the upse
 ```
 
 Solution
+
 
 ## JobDescription:26
 ```
