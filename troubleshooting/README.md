@@ -45,6 +45,7 @@ Something went wrong, watch the MongoSyphon.log for the [ERROR] line.
 
 [MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
 
+# Errors
 
 ## No $find section defined
 ```
