@@ -150,7 +150,7 @@ There is a missing '}' in your config file.
 
 Solution
 
-There is an error in your cluster's uri.
+There is an error in your cluster's uri or in the network configuration i.e. Ip whitelisting, firewall,... .
 
 ## Duplicate key error
 ```
