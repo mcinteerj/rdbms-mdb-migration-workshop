@@ -35,15 +35,15 @@ Something went wrong, watch the MongoSyphon.log for the [ERROR] line.
 
 [Timed out aftrer 30000ms](#timed-out-aftrer-30000ms)
 
-[Duplicate key error](#MongoSyphon-does-not-do-anything)
+[Duplicate key error](#duplicate-key-error)
 
-[Access denied](#MongoSyphon-does-not-do-anything)
+[Access denied](#access-denied)
 
-[Unknown column](#MongoSyphon-does-not-do-anything)
+[Unknown column](#unknown-column)
 
 [MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
 
-[Column is ambiguous](#Column-is-ambiguous)
+[Column is ambiguous](#column-is-ambiguous)
 
 # Errors
 
