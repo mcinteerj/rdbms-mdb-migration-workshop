@@ -187,7 +187,7 @@ The column you tried to call in your query is not the right one. Check for typos
 
 Solution
 
-The Column you tried to call in your query is present in another table used. Be careful to use table.column in your query.
+The Column you tried to call in your query is present in another table used. Be careful to use ```table.column``` in your query.
 
 
 # Your Data does not look right in your cluster
