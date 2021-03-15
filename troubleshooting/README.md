@@ -15,7 +15,9 @@ Something went wrong, watch the MongoSyphon.log for the [ERROR] line.
 
 [MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+[No $find section defined](#No-$find-section-defined)
+
+[Expected a ',' or '}'](#Expected-a-','-or-'}')
 
 [MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
 
@@ -41,9 +43,7 @@ Something went wrong, watch the MongoSyphon.log for the [ERROR] line.
 
 [MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
-
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+[Column is ambiguous](#Column-is-ambiguous)
 
 # Errors
 
