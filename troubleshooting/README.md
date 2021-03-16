@@ -9,7 +9,7 @@
 
 Solution
 
-Something went wrong, watch the MongoSyphon.log for the [ERROR] line and look for it in the index below.
+Something went wrong, read the MongoSyphon.log for the [ERROR] line and look for it in the index below.
 
 
 ## [MongoSyphon errors](#mongosyphon-errors-1)
