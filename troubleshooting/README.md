@@ -50,9 +50,9 @@ Something went wrong, read the MongoSyphon.log, located in the directory where y
 
 ## [Your Data does not look right in your cluster](#your-data-does-not-look-right-in-your-cluster-1)
 
-[All the calls are in the first document](#all-the-calls-are-in-the-first-document)
+- [All the calls are in the first document](#all-the-calls-are-in-the-first-document)
 
-[I only have one call per subscriber](#i-only-have-one-call-per-subscriber)
+- [I only have one call per subscriber](#i-only-have-one-call-per-subscriber)
 
 # MongoSyphon Errors
 
@@ -209,5 +209,5 @@ If you are not using mergeon, but the parameters, the parameter given is not the
 
 **Solution**
 
-Your call section in the main template is called as an ```Object``` instead of an ```Array```. Use brackets[] to force the type.
+Your call section in the main template is called as an ```Object``` instead of an ```Array```. Use brackets ```[]``` to force the type.
 
