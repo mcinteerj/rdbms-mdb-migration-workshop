@@ -2,6 +2,8 @@
 
 ## MongoSyphon does not do anything
 
+Some of the errors are returned in std.out and will be visible in the shell but most of them will not and will only be visible in the log file.
+
 ```
 > java -jar MongoSyphon.jar -c config.js
 > 
@@ -14,37 +16,37 @@ Something went wrong, read the MongoSyphon.log for the [ERROR] line and look for
 
 ## [MongoSyphon errors](#mongosyphon-errors-1)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+- [MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
 
-[No $find section defined](#no-find-section-defined)
+- [No $find section defined](#no-find-section-defined)
 
-[Expected a ',' or '}'](#expected-a--or-)
+- [Expected a ',' or '}'](#expected-a--or-)
 
-[JobDescription:26](#jobdescription26)
+- [JobDescription:26](#jobdescription26)
 
-[Failed to parse command line option](#failed-to-parse-command-line-option)
+- [Failed to parse command line option](#failed-to-parse-command-line-option)
 
-[Cannot find section named](#cannot-find-section-named)
+- [Cannot find section named](#cannot-find-section-named)
 
-[Unable to connect to RDBMS](#unable-to-connect-to-rdbms)
+- [Unable to connect to RDBMS](#unable-to-connect-to-rdbms)
 
-[Communications link failure](#communications-link-failure)
+- [Communications link failure](#communications-link-failure)
 
-[Don't know how to handle connection uri](#dont-know-how-to-handle-connection-uri)
+- [Don't know how to handle connection uri](#dont-know-how-to-handle-connection-uri)
 
-[JSONObject must end with '}'](#jsonobject-must-end-with-)
+- [JSONObject must end with '}'](#jsonobject-must-end-with-)
 
-[Timed out aftrer 30000ms](#timed-out-aftrer-30000ms)
+- [Timed out aftrer 30000ms](#timed-out-aftrer-30000ms)
 
-[Duplicate key error](#duplicate-key-error)
+- [Duplicate key error](#duplicate-key-error)
 
-[Access denied](#access-denied)
+- [Access denied](#access-denied)
 
-[Unknown column](#unknown-column)
+- [Unknown column](#unknown-column)
 
-[MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
+- [MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
 
-[Column is ambiguous](#column-is-ambiguous)
+- [Column is ambiguous](#column-is-ambiguous)
 
 ## Your Data does not look right on your cluster
 
@@ -195,3 +197,8 @@ The Column you tried to call in your query is present in another table used. Be 
 
 Solution
 
+If you are using mergeon, be mindful you need to order the two tables by the **same value** and the **same order**.
+
+If you are not using mergeon, but the parameters, the parameter given is not the right one.
+
+## 
