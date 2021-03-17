@@ -52,7 +52,7 @@ Something went wrong, read the MongoSyphon.log, located in the directory where y
 
 [All the calls are in the first document](#all-the-calls-are-in-the-first-document)
 
-[I only have one call per subscriber](#i-only-have-one-call per-subscriber)
+[I only have one call per subscriber](#i-only-have-one-call-per-subscriber)
 
 # MongoSyphon Errors
 
