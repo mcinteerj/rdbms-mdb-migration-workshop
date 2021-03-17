@@ -201,9 +201,9 @@ The Column you tried to call in your query is present in another table used. Be 
 
 **Solution**
 
-If you are using mergeon, be mindful you need to order the two tables by the **same value** and the **same order**.
+- If you are using mergeon, be mindful you need to order the two tables by the **same value** and the **same order**.
 
-If you are not using mergeon, but the parameters, the parameter given is not the right one.
+- If you are not using mergeon, but the parameters, the parameter given is not the right one.
 
 ## I only have one call per subscriber
 
