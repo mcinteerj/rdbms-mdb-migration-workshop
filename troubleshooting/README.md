@@ -2,7 +2,7 @@
 
 ## MongoSyphon does not do anything
 
-Some of the errors are returned in std.out and will be visible in the shell but most of them will not and will only be visible in the log file.
+Some of the errors are returned in std.out and will be visible in the shell but most of them will not and will only be visible in the log file. This is what it will look like in your shell:
 
 ```
 > java -jar MongoSyphon.jar -c config.js
@@ -11,7 +11,7 @@ Some of the errors are returned in std.out and will be visible in the shell but 
 
 **Solution**
 
-Something went wrong, read the MongoSyphon.log for the [ERROR] line and look for it in the index below.
+Something went wrong, read the MongoSyphon.log, located in the directory where you put the MongoSyphon files, and look for the [ERROR] line. You will find the solution by clicking on the corresponding error in the index below.
 
 
 ## [MongoSyphon errors](#mongosyphon-errors-1)
@@ -201,4 +201,9 @@ If you are using mergeon, be mindful you need to order the two tables by the **s
 
 If you are not using mergeon, but the parameters, the parameter given is not the right one.
 
-## 
+## I only have one call per subscriber
+
+**Solution**
+
+Your call section in the main template is called as an ```Object``` instead of an ```Array```. Use brackets[] to force the type.
+
