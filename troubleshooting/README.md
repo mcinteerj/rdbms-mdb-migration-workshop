@@ -52,7 +52,7 @@ Something went wrong, read the MongoSyphon.log, located in the directory where y
 
 - [All the calls are in the first document](#all-the-calls-are-in-the-first-document)
 
-- [I only have one call per subscriber](#i-only-have-one-call-per-subscriber)
+- [There is only have one call per subscriber](#there-is-only-have-one-call-per-subscriber)
 
 # MongoSyphon Errors
 
@@ -205,7 +205,7 @@ The Column you tried to call in your query is present in another table used. Be 
 
 - If you are not using mergeon, but the parameters, the parameter given is not the right one.
 
-## I only have one call per subscriber
+## There is only have one call per subscriber
 
 **Solution**
 
