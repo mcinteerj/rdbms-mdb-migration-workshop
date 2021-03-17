@@ -2,7 +2,7 @@
 
 ## MongoSyphon does not do anything
 
-Some of the errors are returned in std.out and will be visible in the shell but most of them will not and will only be visible in the log file. This is what it will look like in your shell:
+Some of the errors are returned in stdout and will be visible in the shell but most of them will not and will only be visible in the log file. This is what it will look like in your shell:
 
 ```
 > java -jar MongoSyphon.jar -c config.js
