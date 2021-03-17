@@ -50,7 +50,7 @@ Something went wrong, read the MongoSyphon.log, located in the directory where y
 
 ## [Your Data does not look right in your cluster](#your-data-does-not-look-right-in-your-cluster-1)
 
-- [I only have one call per subscriber](#i-only-have-one-call per-subscriber)
+[I only have one call per subscriber](#i-only-have-one-call per-subscriber)
 
 # MongoSyphon Errors
 
