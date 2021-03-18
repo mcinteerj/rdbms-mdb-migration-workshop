@@ -160,13 +160,17 @@ We can use the `mergeon` and `cached` options in order to optimise this scenario
 In order to see if this is what is happening to you, you can add a limit to the number of subscribers you are importing - this will significantly reduce the number of queries and therefore execute much quicker. By doing this you can validate that the rest of your MongoSyphon configuration is correct. To do this, simply update the query to the subscriber tables from this:
 
 ```
-"SELECT * FROM customers"
+  query: {
+      sql: 'SELECT * FROM customers'
+  }
 ```
 
 To this:
 
 ```
-"SELECT * FROM customers LIMIT 2"
+  query: {
+      sql: 'SELECT * FROM customers LIMIT 2'
+  }
 ```
 
 This will limit the migration to just 2 customers. If it executes quickly and correctly then you can be confident that the remainder of your MongoSyphon template is correct (if not, then you have some other problems to solve!). 
