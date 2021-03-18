@@ -24,7 +24,6 @@ The source database (MySQL) connection details are:
 
 The target database (MongoDB) is an Atlas cluster that you already have set up or you need to create. 
 
-If you require more detailed instructions for any of the exercises below, please refer to the [Medium Guide](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/tree/main/guides/medium). 
 
 ## 1. Design Your Target MongoDB Data Model
 
@@ -76,6 +75,7 @@ In this final section, you should use MongoDB Charts (provided with your MongoDB
 You can see example solution charts for this exercise [here](../solutions/charts).
 
 # List of Guides
+If you require more detailed instructions on any of the exercises above, please refer to the following links from the Medium Guide: 
 * [Design Your Target MongoDB Data Model](data-modelling)
 * [Migrate Data From MySQL to MongoDB (including transforming the data)](data-migration)
 * [Aggregation Framework for Analytics](aggregations)
