@@ -49,6 +49,7 @@ You are now ready to make the vizualisation of your aggregations.
 * As you did in your aggregation pipeline query, you would need to use the `$unwind` reduction and and `mean` accumulator. 
 * You can go to the **Customize** tab to modify colours and add **Data Value Labels**
 * Remember to enter a **Title** and a short **Description** to your Chart as well! 
+* Once you are done, you can compare your solution to the sample solution provided [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/charts)
 
 ## Visualising the second Aggregation Exercise: Total Calls per Hour of the Day
 
