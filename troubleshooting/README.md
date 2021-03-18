@@ -24,7 +24,7 @@ There are many possible causes of this behaviour, and to find out what's happeni
 	- [Communications link failure](#communications-link-failure)
 	- [Don't know how to handle connection uri](#dont-know-how-to-handle-connection-uri)
 	- [JSONObject must end with '}'](#jsonobject-must-end-with-)
-	- [Timed out aftrer 30000ms](#timed-out-aftrer-30000ms)
+	- [Timed out after 30000ms](#timed-out-after-30000ms)
 	- [Duplicate key error](#duplicate-key-error)
 	- [Access denied](#access-denied)
 	- [Unknown column](#unknown-column)
@@ -111,7 +111,7 @@ There is an error in the declaration of the uri. It should have `jdbc:mysql://` 
 
 Your JSON is misformed and there is a missing `}` in your config file.
 
-### Timed out aftrer 30000ms
+### Timed out after 30000ms
 ```
 11:33:23.680 [main] ERROR c.j.mongosyphon.MongoBulkWriter:127 - Error: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=yourcluster.mongodb.net:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: yourcluster.mongodb.net}, caused by {java.net.UnknownHostException: yourcluster.mongodb.net}}]
 ```
@@ -147,6 +147,32 @@ The column you tried to call in your query is not the right one. Check for typos
 
 The Column you tried to call in your query is present in another table used. Be careful to use `table.column` in your query.
 
+### No Error (MongoSyphon is still running)
+If MongoSyphon is 'hanging' but there are no errors in the log, it's possible that MongoSyphon is still running (just very, very slowly!).
+
+Some configurations could lead to MongoSyphon running for a very long time (e.g. minutes/hours). This is because the way your configure MongoSyphon leads to queries being sent to the RDBMS, some configurations can generate many queries to the database and it may take some time for these to execute. 
+
+For example, to retrieve rate plan information, MongoSyphon will have to query the RDBMS for every customer and every call in the database - if there are 100 customers, each with 10 calls, this would generate 1,000 queries. If you happen to have a high latency connection to the DB which caused each query to take 0.5s, then 1,000 calls would take 500 seconds (~8.5 minutes) to run. 
+
+We can use the `mergeon` and `cached` options in order to optimise this scenario. However, before jumping into implementing these options, it's best to validate that this is the problem you face. 
+
+In order to see if this is what is happening to you, you can add a limit to the number of subscribers you are importing - this will significantly reduce the number of queries and therefore execute much quicker. By doing this you can validate that the rest of your MongoSyphon configuration is correct. To do this, simply update the query to the subscriber tables from this:
+
+```
+"SELECT * FROM customers"
+```
+
+To this:
+
+```
+"SELECT * FROM customers LIMIT 2"
+```
+
+This will limit the migration to just 2 customers. If it executes quickly and correctly then you can be confident that the remainder of your MongoSyphon template is correct (if not, then you have some other problems to solve!). 
+
+You will still need to remove the limit to migrate all of the subscribers, but you can now be confident that you have identified the right issue!
+
+Review the [Easy Guide](../guides/easy/data-migration/build-mongosyphon-config.md#rate-plan-section) or [MongoSyphon](https://github.com/johnlpage/MongoSyphon) docs to learn about the `mergeon` and `cached` options in order to optimise your migration. 
 
 ## Data Does Not Look Right In Your Cluster
 
