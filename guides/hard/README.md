@@ -1,4 +1,4 @@
-Return to the workshop overview page [here](..).
+Return to the workshop overview page [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop).
 
 # Hard Guide
 Welcome to the 'Hard' guide for the RDBMS to MongoDB Migration workshop. This guide is meant for people who are confident with relational systems, ETL's and MongoDB. 
