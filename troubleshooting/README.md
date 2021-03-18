@@ -30,6 +30,7 @@ There are many possible causes of this behaviour, and to find out what's happeni
 	- [Unknown column](#unknown-column)
 	- [MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
 	- [Column is ambiguous](#column-is-ambiguous)
+	- [No Error (MongoSyphon is still running)](#no-error-mongosyphon-is-still-running)
 - [Data Does Not Look Right In Your Cluster](#Data-Does-Not-Look-Right-In-Your-Cluster)
 	- [All the calls are in the first document](#all-the-calls-are-in-the-first-document)
 	- [There is only have one call per subscriber](#there-is-only-have-one-call-per-subscriber)
