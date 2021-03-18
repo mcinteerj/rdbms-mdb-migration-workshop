@@ -24,6 +24,8 @@ The source database (MySQL) connection details are:
 
 The target database (MongoDB) is an Atlas cluster that you already have set up or you need to create. 
 
+If you require more detailed instructions for any of the exercises below, please refer to the [Medium Guide](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/tree/main/guides/medium). 
+
 ## 1. Design Your Target MongoDB Data Model
 
 First, analyse the data model in the legacy relational database and design a document data model that is optimised for MongoDB.
