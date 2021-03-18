@@ -1,0 +1,2 @@
+# Solutions
+The solutions to each exercise will be added to this folder during the hackathon so you can check your answers. We will add each solution progressively over time to give you a chance to complete each exercise before jumping straight to the solution. 
