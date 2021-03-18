@@ -54,7 +54,7 @@ You are now ready to make the vizualisation of your aggregations.
 * You should now see a Chart on your screen
 * Optionally, you can go to the **Customize** tab and enable **Data Value Labels** under the **Chart Elements**. You can also play around with colours and other visual features.  
 * Finally, you can give your chart a title by editing the **Enter a title** field, and you may also add a description by editing the **Enter a description** field on the chart.
-* Once you are done, you can compare your solution to the sample solution provided [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/blob/main/guides/solutions/Charts/Charts_Exercise1_Result.png). 
+* Once you are done, you can compare your solution to the sample solution provided [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/tree/main/guides/solutions/charts). 
 
 ## Visualising the second Aggregation Exercise: Total Calls per Hour of the Day
 
