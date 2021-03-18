@@ -151,7 +151,7 @@ The Column you tried to call in your query is present in another table used. Be 
 ### No Error (MongoSyphon is still running)
 If MongoSyphon is 'hanging' but there are no errors in the log, it's possible that MongoSyphon is still running (just very, very slowly!).
 
-Some configurations could lead to MongoSyphon running for a very long time (e.g. minutes/hours). This is because the way your configure MongoSyphon leads to queries being sent to the RDBMS, some configurations can generate many queries to the database and it may take some time for these to execute. 
+Some configurations could lead to MongoSyphon running for a very long time (e.g. minutes/hours). This is because the way you configure MongoSyphon leads to queries being sent to the RDBMS, some configurations can generate many queries to the database and it may take some time for these to execute. 
 
 For example, to retrieve rate plan information, MongoSyphon will have to query the RDBMS for every customer and every call in the database - if there are 100 customers, each with 10 calls, this would generate 1,000 queries. If you happen to have a high latency connection to the DB which caused each query to take 0.5s, then 1,000 calls would take 500 seconds (~8.5 minutes) to run. 
 
