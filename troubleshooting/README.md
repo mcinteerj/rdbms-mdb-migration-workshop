@@ -14,7 +14,6 @@ There are many possible causes of this behaviour, and to find out what's happeni
 ## Most Common Errors
 
 - [MongoSyphon Errors](#MongoSyphon-Errors)
-	- [MongoSyphon does not do anything](#MongoSyphon-does-not-do-anything)
 	- [No $find section defined](#no-find-section-defined)
 	- [Expected a ',' or '}'](#expected-a--or-)
 	- [JobDescription:26](#jobdescription26)
