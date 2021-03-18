@@ -75,7 +75,7 @@ In this final section, you should use MongoDB Charts (provided with your MongoDB
 You can see example solution charts for this exercise [here](../solutions/charts).
 
 # Too Hard?
-If you require more detailed instructions on any of the exercises above, please refer to the following links from the Medium Guide: 
+If you require more detailed instructions on any of the exercises above, please refer to the following links from the **Medium Guide**: 
 * [Design Your Target MongoDB Data Model](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/tree/main/guides/medium/data-modelling)
 * [Migrate Data From MySQL to MongoDB (including transforming the data)](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/tree/main/guides/medium/data-migration)
 * [Aggregation Framework for Analytics](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/tree/main/guides/medium/aggregations)

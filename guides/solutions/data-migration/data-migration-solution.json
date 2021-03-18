@@ -7,7 +7,7 @@
         },
         "target": {
             "mode": "insert",
-            "uri": "mongodb://appUser:AtlasW0rkshop!@sandbox-shard-00-00.rtgvt.mongodb.net:27017,sandbox-shard-00-01.rtgvt.mongodb.net:27017,sandbox-shard-00-02.rtgvt.mongodb.net:27017/test?ssl=true&replicaSet=atlas-cv4zo0-shard-0&authSource=admin&retryWrites=true&w=majority",
+            "uri": "mongodb://appUser:AtlasW0rkshop!@my-cluster-name.XXX.mongodb.net/test?retryWrites=true&w=majority",
             "namespace": "hackathon.customers"
         },
         "template": {
@@ -40,7 +40,7 @@
             "connected_party_number": "$connected_party_id"
         },
         "query": {
-            "sql": "SELECT * FROM calls where subscriber_id=? ORDER by subscriber_id DESC"
+            "sql": "SELECT * FROM calls order by subscriber_id DESC"
         },
         "mergeon":
             "subscriber_id"
