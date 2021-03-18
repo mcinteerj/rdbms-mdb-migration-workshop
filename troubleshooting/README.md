@@ -189,4 +189,4 @@ If you are not using mergeon, but rather the parameters, the parameter given is 
 
 ### There is only have one call per subscriber
 
-Your call section in the main template is called as an `Object` instead of an `Array```. Use brackets `[]` to force the type.
+Your call section in the main template is called as an `Object` instead of an `Array`. Use brackets `[]` to force the type.
