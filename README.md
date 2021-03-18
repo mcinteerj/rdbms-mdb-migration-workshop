@@ -92,6 +92,6 @@ The following links are to external pages which contain further reading and reso
 
 # Maintainers
 * [Charles Van Parys](https://github.com/cvpmdb/)
-* [Snehal Batia](https://github.com/snehal08/)
+* [Snehal Bhatia](https://github.com/snehal08/)
 * [Chris Dowling](https://github.com/chrismarydowling/)
 * [Jake McInteer](https://github.com/mcinteerj/)
