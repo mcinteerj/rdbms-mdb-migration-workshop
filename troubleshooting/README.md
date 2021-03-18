@@ -9,7 +9,7 @@ Some errors will be printed to `stdout` and will be immediately visible to you (
 > 
 ```
 
-There are many possible causes of this behaviour, and to find out what's happening you can read the `MongoSyphon.log` which is located in the directory where you put the MongoSyphon files. Look for the [ERROR] line and then search below to find the solution for your error.
+There are many possible causes of this behaviour, and to find out what's happening you can read the `MongoSyphon.log` which is located in the directory where you put the MongoSyphon files. Look for the `[ERROR]` line and then search below to find the solution for your error.
 
 ## Most Common Errors
 
