@@ -1,7 +1,7 @@
 Return to the workshop overview page [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/).
 
 # Data Modelling Solution
-The code block below shows a JSON document the represents the relational data provided on the [Data Modelling Exercise](../easy/data-modelling/) page. See below for an explanation of each main component.
+The code block below shows a JSON document the represents the relational data provided on the [Data Modelling Exercise](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/tree/main/guides/easy/data-modelling) page. See below for an explanation of each main component.
 
 ```
 {
