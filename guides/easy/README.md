@@ -1,4 +1,4 @@
-Return to the workshop overview page [here](..).
+Return to the workshop overview page [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop/).
 
 # Easy Guide
 Welcome to the 'Easy' guide for the RDBMS to MongoDB Migration workshop. This guide is meant for people who are relatively new to working with MongoDB and provides step-by-step guidance to complete the workshop exercises. 
