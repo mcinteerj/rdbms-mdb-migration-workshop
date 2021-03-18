@@ -1,4 +1,4 @@
-Return to the workshop overview page [here](..).
+Return to the workshop overview page [here](https://github.com/mcinteerj/rdbms-mdb-migration-workshop).
 
 # Medium Guide
 Welcome to the 'Medium' guide for the RDBMS to MongoDB Migration workshop. This guide is meant for people who have used MongoDB, but are still relatively new. It provides guidance to complete the workshop exercises. 
