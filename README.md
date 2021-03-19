@@ -1,3 +1,5 @@
+***Note: The MySQL database referred to in this repository is no longer operational. We have left the repo available for future reference.***
+
 # RDBMS to MongoDB Migration
 **Time to Complete:** 2.5 Hours
 
