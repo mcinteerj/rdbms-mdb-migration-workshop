@@ -1,0 +1,61 @@
+{
+    "start": {
+        "source": {
+            "uri": "jdbc:mysql://database-1.cb7xvxwyioz4.eu-west-3.rds.amazonaws.com:3306/telecom?useUnicode=true&useServerPrepStmts=true&useSSL=false",
+            "user": "bt-hack",
+            "password": "btgameday123!march2021"
+        },
+        "target": {
+            "mode": "insert",
+            "uri": "mongodb://appUser:AtlasW0rkshop!@my-cluster-name.XXX.mongodb.net/test?retryWrites=true&w=majority",
+            "namespace": "hackathon.customers"
+        },
+        "template": {
+            "subscriber_id": "$subscriber_id",
+            "gender": "$gender",
+            "name": "$name",
+            "email": "$email",
+            "phone_number": "$phone_number",
+            "date_of_birth": "$date_of_birth",
+            "address": {
+                "street": "$street",
+                "zip": "$zip",
+                "city": "$city",
+                "country_code": "$country_code"
+            },
+            "calls": [
+                "@callssection"
+            ]
+        },
+        "query": {
+            "sql": "SELECT * FROM customers order by subscriber_id DESC"
+        }
+    },
+    "callssection": {
+        "template": {
+            "call_id": "$call_id",
+            "call_duration": "$call_duration",
+            "date": "$date_time_stamp",
+            "rate_plan_id": "@rateplansection",
+            "connected_party_number": "$connected_party_id"
+        },
+        "query": {
+            "sql": "SELECT * FROM calls order by subscriber_id DESC"
+        },
+        "mergeon":
+            "subscriber_id"
+    },
+    "rateplansection": {
+        "template": {
+            "description": "$description",
+            "type": "$type"
+        },
+        "query": {
+            "sql": "SELECT * FROM rate_plan where rate_plan_id=?"
+        },
+        "params": [
+            "rate_plan_id"
+        ],
+        "cached":true
+    }
+}
